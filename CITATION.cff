@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "WIMSTA Formula Registry: body-composition and energy-expenditure equations with primary sources"
+authors:
+  - name: "WIMSTA"
+    website: "https://wimsta.com"
+    email: "hello@wimsta.com"
+version: "2026.08.11"
+date-released: "2026-08-11"
+url: "https://wimsta.com/registry/"
+repository-code: "https://github.com/getwimsta/formulas"
+license: CC-BY-4.0
+keywords:
+  - "body composition"
+  - "body fat"
+  - "basal metabolic rate"
+  - "BMI"
+  - "waist-to-height ratio"
+  - "maximum heart rate"
+  - "anthropometry"
+  - "equations"

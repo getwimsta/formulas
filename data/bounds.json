@@ -1,0 +1,50 @@
+{
+  "age": {
+    "min": 18,
+    "max": 100
+  },
+  "height_cm": {
+    "min": 100,
+    "max": 250
+  },
+  "weight_kg": {
+    "min": 20,
+    "max": 350
+  },
+  "waist_cm": {
+    "min": 45,
+    "max": 160
+  },
+  "abdomen_cm": {
+    "min": 50,
+    "max": 170
+  },
+  "neck_cm": {
+    "min": 20,
+    "max": 60
+  },
+  "hip_cm": {
+    "min": 60,
+    "max": 180
+  },
+  "wrist_cm": {
+    "min": 10,
+    "max": 25
+  },
+  "forearm_cm": {
+    "min": 15,
+    "max": 45
+  },
+  "thigh_cm": {
+    "min": 30,
+    "max": 90
+  },
+  "calf_cm": {
+    "min": 20,
+    "max": 60
+  },
+  "body_fat_pct": {
+    "min": 3,
+    "max": 65
+  }
+}

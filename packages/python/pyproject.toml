@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wimsta-formulas"
+version = "1.0.0"
+description = "WIMSTA Formula Registry: body-fat, BMI, waist-to-height, max heart rate and BMR equations with primary sources."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSE-DATA", "NOTICE"]
+authors = [{ name = "WIMSTA", email = "hello@wimsta.com" }]
+keywords = ["body-fat", "bmi", "bmr", "waist-to-height", "max-heart-rate", "body-composition", "anthropometry", "formulas", "open-data"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://wimsta.com/registry/"
+Documentation = "https://wimsta.com/registry/"
+Repository = "https://github.com/getwimsta/formulas"
+Changelog = "https://github.com/getwimsta/formulas/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+wimsta_formulas = ["data/*.json", "py.typed"]

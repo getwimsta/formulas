@@ -1,0 +1,28 @@
+{
+  "name": "wimsta-formulas",
+  "version": "1.0.0",
+  "description": "WIMSTA Formula Registry: body-fat, BMI, waist-to-height, max heart rate and BMR equations with primary sources. Single formulas; ranges via the WIMSTA API.",
+  "license": "Apache-2.0",
+  "author": "WIMSTA <hello@wimsta.com> (https://wimsta.com)",
+  "homepage": "https://wimsta.com/registry/",
+  "repository": { "type": "git", "url": "git+https://github.com/getwimsta/formulas.git", "directory": "packages/js" },
+  "bugs": { "url": "https://github.com/getwimsta/formulas/issues", "email": "hello@wimsta.com" },
+  "keywords": ["body-fat", "bmi", "bmr", "basal-metabolic-rate", "waist-to-height", "max-heart-rate", "body-composition", "anthropometry", "formulas", "open-data"],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/esm/index.d.ts", "default": "./dist/esm/index.js" },
+      "require": { "types": "./dist/cjs/index.d.ts", "default": "./dist/cjs/index.js" }
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "LICENSE-DATA", "NOTICE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node -e \"require('fs').writeFileSync('dist/cjs/package.json','{\\\"type\\\":\\\"commonjs\\\"}')\"",
+    "test": "node --test test/vectors.test.mjs"
+  },
+  "devDependencies": { "typescript": "^5.6.0" }
+}

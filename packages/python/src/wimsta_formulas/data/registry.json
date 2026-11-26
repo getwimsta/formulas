@@ -1,0 +1,605 @@
+{
+  "registry_version": "2026.08.11",
+  "last_updated": "2026-08-11",
+  "license": "CC-BY-4.0",
+  "attribution_notice": "Data from WIMSTA (wimsta.com), licensed CC BY 4.0. Cite as: \"WIMSTA (wimsta.com)\".",
+  "canonical_page": "https://wimsta.com/registry/",
+  "formula_count": 15,
+  "formulas": [
+    {
+      "id": "deurenberg",
+      "name": "Deurenberg",
+      "category": "body-fat",
+      "equation": "BF% = 1.20·BMI + 0.23·age − 10.8·sex − 5.4 (BMI in kg/m², age in years)",
+      "inputs": [
+        "bmi",
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Deurenberg, Weststrate & Seidell",
+        "year": 1991,
+        "journal": "Br J Nutr 65(2):105–114",
+        "doi": "https://doi.org/10.1079/BJN19910073"
+      },
+      "sample": {
+        "n": 1229,
+        "population": "Netherlands adults",
+        "reference_method": "densitometry (underwater weighing)"
+      },
+      "error": {
+        "note": "SEE 4.1 pp · R² 0.79",
+        "value": 4.1,
+        "unit": "pp"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "Overestimates in obesity (per the authors) and not validated in Asian populations. BMI-based, so it cannot tell muscle from fat."
+      ],
+      "canonical_page": "https://wimsta.com/deurenberg-formula/",
+      "coefficients": {
+        "bmi": 1.2,
+        "age": 0.23,
+        "sex": -10.8,
+        "intercept": -5.4
+      },
+      "sex_coding": "male=1, female=0",
+      "units": "metric"
+    },
+    {
+      "id": "cun-bae",
+      "name": "CUN-BAE",
+      "category": "body-fat",
+      "equation": "BF% = −44.988 + 0.503·age + 10.689·female + 3.172·BMI − 0.026·BMI² + 0.181·BMI·female − 0.02·BMI·age − 0.005·BMI²·female + 0.00021·BMI²·age",
+      "inputs": [
+        "bmi",
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Gómez-Ambrosi et al.",
+        "year": 2012,
+        "journal": "Diabetes Care 35(2):383–388",
+        "doi": "https://doi.org/10.2337/dc11-1334"
+      },
+      "sample": {
+        "n": 6510,
+        "population": "Spanish white adults 18–80",
+        "reference_method": "air-displacement plethysmography"
+      },
+      "error": {
+        "note": "SE ≈ 4.7% · r 0.89",
+        "value": 4.7,
+        "unit": "pp"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "BMI-based, so it shares the muscle blind spot; validated mainly in white adults. Not for under-18s or pregnancy."
+      ],
+      "canonical_page": "https://wimsta.com/cun-bae-calculator/",
+      "coefficients": {
+        "intercept": -44.988,
+        "age": 0.503,
+        "female": 10.689,
+        "bmi": 3.172,
+        "bmi2": -0.026,
+        "bmi_female": 0.181,
+        "bmi_age": -0.02,
+        "bmi2_female": -0.005,
+        "bmi2_age": 0.00021
+      },
+      "sex_coding": "female=1, male=0 (⚠️ inverse of Deurenberg)",
+      "units": "metric"
+    },
+    {
+      "id": "us-navy",
+      "name": "US Navy (Hodgdon–Beckett)",
+      "category": "body-fat",
+      "equation": "men: BF% = 495 / (1.0324 − 0.19077·log₁₀(waist−neck) + 0.15456·log₁₀(height)) − 450; women: BF% = 495 / (1.29579 − 0.35004·log₁₀(waist+hip−neck) + 0.221·log₁₀(height)) − 450 (cm)",
+      "inputs": [
+        "waist",
+        "neck",
+        "height",
+        "sex",
+        "hip (women only)"
+      ],
+      "source": {
+        "authors": "Hodgdon & Beckett",
+        "year": 1984,
+        "journal": "U.S. Navy NHRC Reports 84-11 / 84-29 (DTIC ADA143890 / ADA146456)"
+      },
+      "sample": {
+        "population": "U.S. military personnel",
+        "reference_method": "hydrostatic weighing"
+      },
+      "error": {
+        "note": "±3.5 pp (SEE) · r ≈ 0.90",
+        "value": 3.5,
+        "unit": "pp"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "Developed on a military population; loses accuracy at extreme builds. Not valid in pregnancy."
+      ],
+      "canonical_page": "https://wimsta.com/us-navy-body-fat-formula/",
+      "coefficients": {
+        "men": {
+          "c0": 1.0324,
+          "cLogWaistNeck": -0.19077,
+          "cLogHeight": 0.15456
+        },
+        "women": {
+          "c0": 1.29579,
+          "cLogWaistHipNeck": -0.35004,
+          "cLogHeight": 0.221
+        },
+        "transform": "495 / denominator − 450"
+      },
+      "sex_coding": "separate equations for men and women (women also require hip)",
+      "units": "metric"
+    },
+    {
+      "id": "rfm",
+      "name": "RFM (Relative Fat Mass)",
+      "category": "body-fat",
+      "equation": "men: RFM = 64 − 20·(height/waist); women: RFM = 76 − 20·(height/waist) (cm)",
+      "inputs": [
+        "height",
+        "waist",
+        "sex"
+      ],
+      "source": {
+        "authors": "Woolcott & Bergman",
+        "year": 2018,
+        "journal": "Sci Rep 8:10980",
+        "doi": "https://doi.org/10.1038/s41598-018-29362-1"
+      },
+      "sample": {
+        "n": 12000,
+        "population": "NHANES, US multi-ethnic",
+        "reference_method": "DXA"
+      },
+      "error": {
+        "note": "more accurate than BMI vs DXA"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "Needs only waist and height — a strong all-rounder, but still an estimate, not a measurement."
+      ],
+      "canonical_page": "https://wimsta.com/rfm-calculator/",
+      "coefficients": {
+        "men": {
+          "intercept": 64,
+          "heightOverWaist": -20
+        },
+        "women": {
+          "intercept": 76,
+          "heightOverWaist": -20
+        }
+      },
+      "sex_coding": "intercept 64 male / 76 female (the sex term is the +12 offset)",
+      "units": "metric"
+    },
+    {
+      "id": "covert-bailey",
+      "name": "Covert Bailey",
+      "category": "body-fat",
+      "equation": "men (inches): waist + 0.5·hip − forearmCoef·forearm − wrist (forearmCoef 3 if age≤30 else 2.7); women (inches): hip + thighCoef·thigh − 2·calf − wrist (thighCoef 0.8 if age≤30 else 1.0)",
+      "inputs": [
+        "waist",
+        "hip",
+        "forearm",
+        "wrist",
+        "age",
+        "sex",
+        "thigh (women)",
+        "calf (women)"
+      ],
+      "source": {
+        "authors": "Covert Bailey",
+        "year": 1999,
+        "journal": "“Ultimate Fit or Fat” (book)"
+      },
+      "sample": {
+        "population": "popular book, not peer-reviewed",
+        "reference_method": "—"
+      },
+      "error": {
+        "note": "not formally published"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "From a popular book, not a peer-reviewed paper; the primary validation is hard to source. Needs extra circumferences (wrist/forearm or thigh/calf)."
+      ],
+      "coefficients": {
+        "men": {
+          "waist": 1,
+          "hip": 0.5,
+          "forearm": "coef",
+          "wrist": -1,
+          "forearmCoef_le30": -3,
+          "forearmCoef_gt30": -2.7
+        },
+        "women": {
+          "hip": 1,
+          "thigh": "coef",
+          "calf": -2,
+          "wrist": -1,
+          "thighCoef_le30": 0.8,
+          "thighCoef_gt30": 1
+        }
+      },
+      "sex_coding": "separate equations; women use thigh+calf, men use waist+hip+forearm",
+      "units": "imperial"
+    },
+    {
+      "id": "gallagher-ranges",
+      "name": "Gallagher healthy ranges",
+      "category": "body-fat-ranges",
+      "equation": "Age- and sex-specific HEALTHY body-fat % ranges (a reference band, not an estimator)",
+      "inputs": [
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Gallagher et al.",
+        "year": 2000,
+        "journal": "Am J Clin Nutr 72(3):694–701",
+        "doi": "https://doi.org/10.1093/ajcn/72.3.694"
+      },
+      "sample": {
+        "population": "multi-ethnic adults",
+        "reference_method": "four-compartment model"
+      },
+      "error": {
+        "note": "age- and sex-specific ranges"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "Source of the healthy-range ZONES, not a body-fat estimate. Ranges depend on age and sex; Asian ranges differ."
+      ],
+      "sex_coding": "ranges differ by sex"
+    },
+    {
+      "id": "who-bmi",
+      "name": "WHO BMI cut-points",
+      "category": "bmi",
+      "equation": "BMI cut-points (kg/m²): underweight <18.5 · normal 18.5–25 · overweight 25–30 · obese I 30–35 · II 35–40 · III ≥40",
+      "inputs": [
+        "bmi"
+      ],
+      "source": {
+        "authors": "World Health Organization",
+        "year": 2000,
+        "journal": "WHO Technical Report Series 894",
+        "doi": "https://www.who.int/publications/i/item/WHO_TRS_894"
+      },
+      "sample": {
+        "population": "international expert consultation",
+        "reference_method": "population mortality/morbidity risk"
+      },
+      "error": {
+        "note": "bands 18.5 / 25 / 30 / 35 / 40"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "Population cut-points, not a personal verdict. Class I/II/III come from TRS 894, not the current fact sheet. Asian risk thresholds are lower."
+      ],
+      "canonical_page": "https://wimsta.com/bmi-categories/",
+      "coefficients": {
+        "cutPoints": [
+          18.5,
+          25,
+          30,
+          35,
+          40
+        ]
+      }
+    },
+    {
+      "id": "trefethen-bmi",
+      "name": "Trefethen “new BMI”",
+      "category": "bmi",
+      "equation": "new BMI = 1.3·weight / height^2.5 (weight kg, height m)",
+      "inputs": [
+        "height",
+        "weight"
+      ],
+      "source": {
+        "authors": "Nick Trefethen (Oxford)",
+        "year": 2013,
+        "journal": "The Economist (letter) / Oxford page",
+        "doi": "https://people.maths.ox.ac.uk/trefethen/bmi.html"
+      },
+      "sample": {
+        "population": "—",
+        "reference_method": "—"
+      },
+      "error": {
+        "note": "1.3 · w / h^2.5"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "A proposal, not an official standard — gentler on very tall and very short people. Uses the same category cut-points as classic BMI."
+      ],
+      "canonical_page": "https://wimsta.com/new-bmi-formula/",
+      "coefficients": {
+        "factor": 1.3,
+        "heightExponent": 2.5
+      },
+      "units": "metric"
+    },
+    {
+      "id": "ashwell-whtr",
+      "name": "Ashwell boundary",
+      "category": "waist-to-height",
+      "equation": "waist ÷ height; screening boundary at 0.5 (\"keep waist under half your height\")",
+      "inputs": [
+        "waist",
+        "height"
+      ],
+      "source": {
+        "authors": "Ashwell & Gibson",
+        "year": 2016,
+        "journal": "BMJ Open 6:e010159",
+        "doi": "https://doi.org/10.1136/bmjopen-2015-010159"
+      },
+      "sample": {
+        "population": "systematic review / meta-analysis",
+        "reference_method": "cardiometabolic risk outcomes"
+      },
+      "error": {
+        "note": "boundary 0.5 (“keep waist under half your height”)"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "A single screening boundary across sex and age; the full scale also flags very low ratios (<0.4). A screening signal, not a diagnosis."
+      ],
+      "coefficients": {
+        "boundary": 0.5,
+        "lowFlag": 0.4
+      }
+    },
+    {
+      "id": "tanaka",
+      "name": "Tanaka",
+      "category": "max-heart-rate",
+      "equation": "HRmax = 208 − 0.7·age (bpm)",
+      "inputs": [
+        "age"
+      ],
+      "source": {
+        "authors": "Tanaka, Monahan & Seals",
+        "year": 2001,
+        "journal": "J Am Coll Cardiol 37(1):153–156",
+        "doi": "https://doi.org/10.1016/S0735-1097(00)01054-8"
+      },
+      "sample": {
+        "n": 18712,
+        "population": "meta-analysis, healthy adults",
+        "reference_method": "measured max heart rate"
+      },
+      "error": {
+        "note": "208 − 0.7·age · SD ±10 bpm",
+        "value": 10,
+        "unit": "bpm"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "Population-recommended over 220−age, but any prediction is ±10 bpm for an individual."
+      ],
+      "canonical_page": "https://wimsta.com/tanaka-formula/",
+      "coefficients": {
+        "intercept": 208,
+        "age": -0.7
+      }
+    },
+    {
+      "id": "gulati",
+      "name": "Gulati",
+      "category": "max-heart-rate",
+      "equation": "HRmax = 206 − 0.88·age (bpm), women",
+      "inputs": [
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Gulati et al.",
+        "year": 2010,
+        "journal": "Circulation 122(2):130–137",
+        "doi": "https://doi.org/10.1161/CIRCULATIONAHA.110.939249"
+      },
+      "sample": {
+        "n": 5437,
+        "population": "women's cohort",
+        "reference_method": "symptom-limited stress test"
+      },
+      "error": {
+        "note": "206 − 0.88·age",
+        "unit": "bpm"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "Derived specifically in women, where 220−age fits worst."
+      ],
+      "canonical_page": "https://wimsta.com/max-heart-rate-women/",
+      "coefficients": {
+        "intercept": 206,
+        "age": -0.88
+      },
+      "sex_coding": "women only (derived in a female cohort)"
+    },
+    {
+      "id": "fox",
+      "name": "Fox (220 − age)",
+      "category": "max-heart-rate",
+      "equation": "HRmax = 220 − age (bpm)",
+      "inputs": [
+        "age"
+      ],
+      "source": {
+        "authors": "Fox, Naughton & Haskell",
+        "year": 1971,
+        "journal": "no strict primary derivation"
+      },
+      "sample": {
+        "population": "observational, small",
+        "reference_method": "—"
+      },
+      "error": {
+        "note": "220 − age · SD ±10–12 bpm",
+        "value": 11,
+        "unit": "bpm"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "The famous one, and the least accurate for an individual — shown with its spread, plus six more formulas in the heart-rate calculator."
+      ],
+      "canonical_page": "https://wimsta.com/220-minus-age/",
+      "coefficients": {
+        "intercept": 220,
+        "age": -1
+      }
+    },
+    {
+      "id": "harris-benedict-1919",
+      "name": "Harris–Benedict",
+      "category": "bmr",
+      "equation": "men: BMR = 66.473 + 13.7516·weight + 5.0033·height − 6.755·age; women: BMR = 655.0955 + 9.5634·weight + 1.8496·height − 4.6756·age (kcal/day; kg, cm, years)",
+      "inputs": [
+        "weight",
+        "height",
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Harris & Benedict",
+        "year": 1919,
+        "journal": "Carnegie Inst. of Washington, Pub. 279"
+      },
+      "sample": {
+        "population": "adults measured in the 1910s",
+        "reference_method": "indirect calorimetry"
+      },
+      "error": {
+        "note": "overestimates modern BMR ~5%"
+      },
+      "verification": "secondary",
+      "independent_derivation": true,
+      "limitations": [
+        "Derived on an early-1900s sample; overestimates basal metabolism by about 5% vs modern measurements. Kept as the historical baseline, shown beside the 1984 revision."
+      ],
+      "canonical_page": "https://wimsta.com/harris-benedict-calculator/",
+      "coefficients": {
+        "men": {
+          "intercept": 66.473,
+          "weight": 13.7516,
+          "height": 5.0033,
+          "age": -6.755
+        },
+        "women": {
+          "intercept": 655.0955,
+          "weight": 9.5634,
+          "height": 1.8496,
+          "age": -4.6756
+        }
+      },
+      "sex_coding": "separate equations for men and women",
+      "units": "metric"
+    },
+    {
+      "id": "harris-benedict-1984",
+      "name": "Harris–Benedict revised",
+      "category": "bmr",
+      "equation": "men: BMR = 88.362 + 13.397·weight + 4.799·height − 5.677·age; women: BMR = 447.593 + 9.247·weight + 3.098·height − 4.33·age (kcal/day; kg, cm, years)",
+      "inputs": [
+        "weight",
+        "height",
+        "age",
+        "sex"
+      ],
+      "source": {
+        "authors": "Roza & Shizgal",
+        "year": 1984,
+        "journal": "Am J Clin Nutr 40(1):168–182",
+        "doi": "https://doi.org/10.1093/ajcn/40.1.168"
+      },
+      "sample": {
+        "n": 337,
+        "population": "indirect-calorimetry sample",
+        "reference_method": "measured resting energy expenditure"
+      },
+      "error": {
+        "note": "re-derivation of Harris–Benedict"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "A re-derivation of Harris–Benedict on new data (n=337), not a reissue — so it counts as a separate estimate. Still tends to run above Mifflin–St Jeor for modern populations."
+      ],
+      "canonical_page": "https://wimsta.com/harris-benedict-calculator/",
+      "coefficients": {
+        "men": {
+          "intercept": 88.362,
+          "weight": 13.397,
+          "height": 4.799,
+          "age": -5.677
+        },
+        "women": {
+          "intercept": 447.593,
+          "weight": 9.247,
+          "height": 3.098,
+          "age": -4.33
+        }
+      },
+      "sex_coding": "separate equations for men and women",
+      "units": "metric"
+    },
+    {
+      "id": "katch-mcardle",
+      "name": "Katch–McArdle (Cunningham 1991)",
+      "category": "bmr",
+      "equation": "BMR = 370 + 21.6·LBM, where LBM = weight·(1 − bodyFat/100) (kcal/day; kg)",
+      "inputs": [
+        "weight",
+        "bodyFat"
+      ],
+      "source": {
+        "authors": "Cunningham (popularised by Katch & McArdle)",
+        "year": 1991,
+        "journal": "Am J Clin Nutr 54(6):963–969",
+        "doi": "https://doi.org/10.1093/ajcn/54.6.963"
+      },
+      "sample": {
+        "population": "synthesis of pooled body-composition data",
+        "reference_method": "lean body mass vs measured RMR"
+      },
+      "error": {
+        "note": "strong with a measured body-fat %"
+      },
+      "verification": "primary",
+      "independent_derivation": true,
+      "limitations": [
+        "Uses lean body mass, so it needs a body-fat % and is only as accurate as that number. It is the Cunningham 1991 equation under a popular name — do not add Cunningham separately (same estimate)."
+      ],
+      "canonical_page": "https://wimsta.com/katch-mcardle-calculator/",
+      "coefficients": {
+        "intercept": 370,
+        "leanBodyMass": 21.6
+      },
+      "units": "metric"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "upload_type": "dataset",
+  "title": "WIMSTA Formula Registry: body-composition and energy-expenditure equations with primary sources",
+  "creators": [
+    {
+      "name": "WIMSTA"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "description": "<p>Open registry of 15 published equations for body composition and energy expenditure (categories: body-fat, body-fat-ranges, bmi, waist-to-height, max-heart-rate, bmr), each with its primary source, coefficients, input list, sex coding, units, reported error, sample and limitations. Every entry was checked against the primary publication; the verification status is recorded per entry.</p><p>Includes test vectors (145 input → output cases from the reference implementation, cross-checked against the live WIMSTA calculation API). Human-readable pages: <a href=\"https://wimsta.com/registry/\">https://wimsta.com/registry/</a>.</p><p>Estimates for general information only; not medical advice.</p>",
+  "keywords": [
+    "body composition",
+    "body fat",
+    "basal metabolic rate",
+    "BMI",
+    "waist-to-height ratio",
+    "maximum heart rate",
+    "anthropometry",
+    "equations"
+  ],
+  "version": "2026.08.11",
+  "related_identifiers": [
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://wimsta.com/registry/",
+      "scheme": "url"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://wimsta.com/api/openapi.json",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1079/BJN19910073",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.2337/dc11-1334",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1038/s41598-018-29362-1",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajcn/72.3.694",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1136/bmjopen-2015-010159",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1016/S0735-1097(00)01054-8",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1161/CIRCULATIONAHA.110.939249",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajcn/40.1.168",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajcn/54.6.963",
+      "scheme": "doi"
+    }
+  ]
+}
