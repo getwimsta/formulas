@@ -7,7 +7,7 @@ name = "wimsta-formulas"
 version = "1.0.0"
 description = "WIMSTA Formula Registry: body-fat, BMI, waist-to-height, max heart rate and BMR equations with primary sources."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "Apache-2.0"
 license-files = ["LICENSE", "LICENSE-DATA", "NOTICE"]
 authors = [{ name = "WIMSTA", email = "hello@wimsta.com" }]

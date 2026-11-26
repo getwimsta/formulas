@@ -49,7 +49,7 @@ const r = calculate('who-bmi', { weight_kg: 62, height_cm: 165 });
 // r.formula.canonical_page → 'https://wimsta.com/bmi-categories/'
 ```
 
-Python 3.9+ (no dependencies, typed):
+Python 3.10+ (no dependencies, typed):
 
 ```python
 from wimsta_formulas import calculate
