@@ -1,5 +1,5 @@
 {
-  "registry_version": "2026.08.11",
+  "registry_version": "2026.11.27",
   "generated": "2026-11-26",
   "api": "https://wimsta.com",
   "tolerance": 0.000001,
@@ -17,7 +17,7 @@
       "unit": "%",
       "api_value": 22.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -31,7 +31,7 @@
       "unit": "%",
       "api_value": 23.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -46,7 +46,7 @@
       "unit": "%",
       "api_value": 19,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -59,7 +59,7 @@
       "unit": "%",
       "api_value": 26,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -75,7 +75,7 @@
       "unit": "%",
       "api_value": 18.3,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -91,7 +91,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -103,7 +103,7 @@
       "unit": "kg/m²",
       "api_value": 20,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -115,7 +115,7 @@
       "unit": "kg/m²",
       "api_value": 21.2,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -127,7 +127,7 @@
       "unit": "ratio",
       "api_value": 0.4,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -138,7 +138,7 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gulati",
@@ -150,7 +150,7 @@
       "unit": "bpm",
       "api_value": 190,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -161,7 +161,7 @@
       "unit": "bpm",
       "api_value": 202,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -175,7 +175,7 @@
       "unit": "kcal/day",
       "api_value": 1279,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -189,7 +189,7 @@
       "unit": "kcal/day",
       "api_value": 1250,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -201,7 +201,7 @@
       "unit": "kcal/day",
       "api_value": 1128,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -215,7 +215,7 @@
       "unit": "%",
       "api_value": 28.8,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -229,7 +229,7 @@
       "unit": "%",
       "api_value": 30.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -244,7 +244,7 @@
       "unit": "%",
       "api_value": 27.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -257,7 +257,7 @@
       "unit": "%",
       "api_value": 30.2,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -273,7 +273,7 @@
       "unit": "%",
       "api_value": 22.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -289,7 +289,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -301,7 +301,7 @@
       "unit": "kg/m²",
       "api_value": 22.8,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -313,7 +313,7 @@
       "unit": "kg/m²",
       "api_value": 23,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -325,7 +325,7 @@
       "unit": "ratio",
       "api_value": 0.44,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -336,7 +336,7 @@
       "unit": "bpm",
       "api_value": 187,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gulati",
@@ -348,7 +348,7 @@
       "unit": "bpm",
       "api_value": 180,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -359,7 +359,7 @@
       "unit": "bpm",
       "api_value": 190,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -373,7 +373,7 @@
       "unit": "kcal/day",
       "api_value": 1413,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -387,7 +387,7 @@
       "unit": "kcal/day",
       "api_value": 1402,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -399,7 +399,7 @@
       "unit": "kcal/day",
       "api_value": 1334,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -413,7 +413,7 @@
       "unit": "%",
       "api_value": 41.1,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -427,7 +427,7 @@
       "unit": "%",
       "api_value": 42.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -442,7 +442,7 @@
       "unit": "%",
       "api_value": 41,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -455,7 +455,7 @@
       "unit": "%",
       "api_value": 39.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -471,7 +471,7 @@
       "unit": "%",
       "api_value": 31.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -487,7 +487,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -499,7 +499,7 @@
       "unit": "kg/m²",
       "api_value": 29.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -511,7 +511,7 @@
       "unit": "kg/m²",
       "api_value": 29.5,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -523,7 +523,7 @@
       "unit": "ratio",
       "api_value": 0.55,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -534,7 +534,7 @@
       "unit": "bpm",
       "api_value": 175,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gulati",
@@ -546,7 +546,7 @@
       "unit": "bpm",
       "api_value": 165,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -557,7 +557,7 @@
       "unit": "bpm",
       "api_value": 173,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -571,7 +571,7 @@
       "unit": "kcal/day",
       "api_value": 1595,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -585,7 +585,7 @@
       "unit": "kcal/day",
       "api_value": 1591,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -597,7 +597,7 @@
       "unit": "kcal/day",
       "api_value": 1548,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -611,7 +611,7 @@
       "unit": "%",
       "api_value": 43.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -625,7 +625,7 @@
       "unit": "%",
       "api_value": 42.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -640,7 +640,7 @@
       "unit": "%",
       "api_value": 40,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -653,7 +653,7 @@
       "unit": "%",
       "api_value": 40.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -669,7 +669,7 @@
       "unit": "%",
       "api_value": 29.3,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -685,7 +685,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -697,7 +697,7 @@
       "unit": "kg/m²",
       "api_value": 28,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -709,7 +709,7 @@
       "unit": "kg/m²",
       "api_value": 29,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -721,7 +721,7 @@
       "unit": "ratio",
       "api_value": 0.57,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -732,7 +732,7 @@
       "unit": "bpm",
       "api_value": 160,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gulati",
@@ -744,7 +744,7 @@
       "unit": "bpm",
       "api_value": 146,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -755,7 +755,7 @@
       "unit": "bpm",
       "api_value": 152,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -769,7 +769,7 @@
       "unit": "kcal/day",
       "api_value": 1299,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -783,7 +783,7 @@
       "unit": "kcal/day",
       "api_value": 1290,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -795,7 +795,7 @@
       "unit": "kcal/day",
       "api_value": 1277,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -809,7 +809,7 @@
       "unit": "%",
       "api_value": 41.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -823,7 +823,7 @@
       "unit": "%",
       "api_value": 39.1,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -838,7 +838,7 @@
       "unit": "%",
       "api_value": 15.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -851,7 +851,7 @@
       "unit": "%",
       "api_value": 31.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -867,7 +867,7 @@
       "unit": "%",
       "api_value": 15.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -883,7 +883,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -895,7 +895,7 @@
       "unit": "kg/m²",
       "api_value": 20,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -907,7 +907,7 @@
       "unit": "kg/m²",
       "api_value": 26,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -919,7 +919,7 @@
       "unit": "ratio",
       "api_value": 0.45,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -930,7 +930,7 @@
       "unit": "bpm",
       "api_value": 138,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gulati",
@@ -942,7 +942,7 @@
       "unit": "bpm",
       "api_value": 118,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -953,7 +953,7 @@
       "unit": "bpm",
       "api_value": 120,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -967,7 +967,7 @@
       "unit": "kcal/day",
       "api_value": 564,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -981,7 +981,7 @@
       "unit": "kcal/day",
       "api_value": 509,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -993,7 +993,7 @@
       "unit": "kcal/day",
       "api_value": 789,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -1007,7 +1007,7 @@
       "unit": "%",
       "api_value": 55.1,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -1021,7 +1021,7 @@
       "unit": "%",
       "api_value": 51.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -1035,7 +1035,7 @@
       "unit": "%",
       "api_value": 38.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -1048,7 +1048,7 @@
       "unit": "%",
       "api_value": 32.8,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -1064,7 +1064,7 @@
       "unit": "%",
       "api_value": 35.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1080,7 +1080,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -1092,7 +1092,7 @@
       "unit": "kg/m²",
       "api_value": 56,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1104,7 +1104,7 @@
       "unit": "kg/m²",
       "api_value": 46,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1116,7 +1116,7 @@
       "unit": "ratio",
       "api_value": 0.64,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -1127,7 +1127,7 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -1138,7 +1138,7 @@
       "unit": "bpm",
       "api_value": 202,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1152,7 +1152,7 @@
       "unit": "kcal/day",
       "api_value": 6009,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1166,7 +1166,7 @@
       "unit": "kcal/day",
       "api_value": 5875,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1178,7 +1178,7 @@
       "unit": "kcal/day",
       "api_value": 3016,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -1192,7 +1192,7 @@
       "unit": "%",
       "api_value": 17.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -1206,7 +1206,7 @@
       "unit": "%",
       "api_value": 18.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -1220,7 +1220,7 @@
       "unit": "%",
       "api_value": 15.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -1233,7 +1233,7 @@
       "unit": "%",
       "api_value": 19.5,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -1249,7 +1249,7 @@
       "unit": "%",
       "api_value": 10.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1265,7 +1265,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -1277,7 +1277,7 @@
       "unit": "kg/m²",
       "api_value": 23.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1289,7 +1289,7 @@
       "unit": "kg/m²",
       "api_value": 22.8,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1301,7 +1301,7 @@
       "unit": "ratio",
       "api_value": 0.45,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -1312,7 +1312,7 @@
       "unit": "bpm",
       "api_value": 191,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -1323,7 +1323,7 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1337,7 +1337,7 @@
       "unit": "kcal/day",
       "api_value": 1806,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1351,7 +1351,7 @@
       "unit": "kcal/day",
       "api_value": 1792,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1363,7 +1363,7 @@
       "unit": "kcal/day",
       "api_value": 1745,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -1377,7 +1377,7 @@
       "unit": "%",
       "api_value": 23.3,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -1391,7 +1391,7 @@
       "unit": "%",
       "api_value": 24.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -1405,7 +1405,7 @@
       "unit": "%",
       "api_value": 20.5,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -1418,7 +1418,7 @@
       "unit": "%",
       "api_value": 23.1,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -1434,7 +1434,7 @@
       "unit": "%",
       "api_value": 16.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1450,7 +1450,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -1462,7 +1462,7 @@
       "unit": "kg/m²",
       "api_value": 26.2,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1474,7 +1474,7 @@
       "unit": "kg/m²",
       "api_value": 25.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1486,7 +1486,7 @@
       "unit": "ratio",
       "api_value": 0.49,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -1497,7 +1497,7 @@
       "unit": "bpm",
       "api_value": 184,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -1508,7 +1508,7 @@
       "unit": "bpm",
       "api_value": 185,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1522,7 +1522,7 @@
       "unit": "kcal/day",
       "api_value": 1900,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1536,7 +1536,7 @@
       "unit": "kcal/day",
       "api_value": 1892,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1548,7 +1548,7 @@
       "unit": "kcal/day",
       "api_value": 1839,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -1562,7 +1562,7 @@
       "unit": "%",
       "api_value": 35.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -1576,7 +1576,7 @@
       "unit": "%",
       "api_value": 35.3,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -1590,7 +1590,7 @@
       "unit": "%",
       "api_value": 30.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -1603,7 +1603,7 @@
       "unit": "%",
       "api_value": 30.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -1619,7 +1619,7 @@
       "unit": "%",
       "api_value": 22,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1635,7 +1635,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -1647,7 +1647,7 @@
       "unit": "kg/m²",
       "api_value": 33.2,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1659,7 +1659,7 @@
       "unit": "kg/m²",
       "api_value": 33.1,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1671,7 +1671,7 @@
       "unit": "ratio",
       "api_value": 0.6,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -1682,7 +1682,7 @@
       "unit": "bpm",
       "api_value": 172,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -1693,7 +1693,7 @@
       "unit": "bpm",
       "api_value": 168,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1707,7 +1707,7 @@
       "unit": "kcal/day",
       "api_value": 1886,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1721,7 +1721,7 @@
       "unit": "kcal/day",
       "api_value": 1895,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1733,7 +1733,7 @@
       "unit": "kcal/day",
       "api_value": 1822,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "deurenberg",
@@ -1747,7 +1747,7 @@
       "unit": "%",
       "api_value": 27.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "cun-bae",
@@ -1761,7 +1761,7 @@
       "unit": "%",
       "api_value": 24.9,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "us-navy",
@@ -1775,7 +1775,7 @@
       "unit": "%",
       "api_value": 21.3,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "rfm",
@@ -1788,7 +1788,7 @@
       "unit": "%",
       "api_value": 22.7,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "covert-bailey",
@@ -1804,7 +1804,7 @@
       "unit": "%",
       "api_value": 19.4,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1820,7 +1820,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "who-bmi",
@@ -1832,7 +1832,7 @@
       "unit": "kg/m²",
       "api_value": 22,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1844,7 +1844,7 @@
       "unit": "kg/m²",
       "api_value": 20.6,
       "api_round_digits": 1,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1856,7 +1856,7 @@
       "unit": "ratio",
       "api_value": 0.48,
       "api_round_digits": 2,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "tanaka",
@@ -1867,7 +1867,7 @@
       "unit": "bpm",
       "api_value": 154,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "fox",
@@ -1878,7 +1878,7 @@
       "unit": "bpm",
       "api_value": 143,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1892,7 +1892,7 @@
       "unit": "kcal/day",
       "api_value": 1621,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1906,7 +1906,7 @@
       "unit": "kcal/day",
       "api_value": 1658,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1918,7 +1918,7 @@
       "unit": "kcal/day",
       "api_value": 1700,
       "api_round_digits": 0,
-      "registry_version": "2026.08.11"
+      "registry_version": "2026.11.27"
     }
   ]
 }

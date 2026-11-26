@@ -1,6 +1,6 @@
 {
-  "registry_version": "2026.08.11",
-  "last_updated": "2026-08-11",
+  "registry_version": "2026.11.27",
+  "last_updated": "2026-11-27",
   "license": "CC-BY-4.0",
   "attribution_notice": "Data from WIMSTA (wimsta.com), licensed CC BY 4.0. Cite as: \"WIMSTA (wimsta.com)\".",
   "canonical_page": "https://wimsta.com/registry/",
@@ -97,13 +97,14 @@
       "id": "us-navy",
       "name": "US Navy (Hodgdon–Beckett)",
       "category": "body-fat",
-      "equation": "men: BF% = 495 / (1.0324 − 0.19077·log₁₀(waist−neck) + 0.15456·log₁₀(height)) − 450; women: BF% = 495 / (1.29579 − 0.35004·log₁₀(waist+hip−neck) + 0.221·log₁₀(height)) − 450 (cm)",
+      "equation": "men: BF% = 495 / (1.0324 − 0.19077·log₁₀(abdomen−neck) + 0.15456·log₁₀(height)) − 450, abdomen measured at the navel; women: BF% = 495 / (1.29579 − 0.35004·log₁₀(waist+hip−neck) + 0.221·log₁₀(height)) − 450 (cm)",
       "inputs": [
-        "waist",
         "neck",
         "height",
         "sex",
-        "hip (women only)"
+        "abdomen (men, at the navel)",
+        "waist (women, narrowest)",
+        "hip (women)"
       ],
       "source": {
         "authors": "Hodgdon & Beckett",
@@ -128,7 +129,7 @@
       "coefficients": {
         "men": {
           "c0": 1.0324,
-          "cLogWaistNeck": -0.19077,
+          "cLogAbdomenNeck": -0.19077,
           "cLogHeight": 0.15456
         },
         "women": {
@@ -138,7 +139,7 @@
         },
         "transform": "495 / denominator − 450"
       },
-      "sex_coding": "separate equations for men and women (women also require hip)",
+      "sex_coding": "separate equations: men use abdomen at the navel, women use natural waist + hip",
       "units": "metric"
     },
     {

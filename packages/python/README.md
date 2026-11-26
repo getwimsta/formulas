@@ -3,7 +3,7 @@
 Open registry of published body-composition and energy-expenditure equations — body fat, healthy body-fat ranges, BMI, waist-to-height ratio, maximum heart rate and basal metabolic rate — each with its primary source, coefficients, inputs, sex coding, units, reported error and limitations. Human-readable pages: **https://wimsta.com/registry/**.
 
 <!-- meta:start -->
-Registry version **2026.08.11** · 15 formulas · 145 test vectors · packages 1.0.0
+Registry version **2026.11.27** · 15 formulas · 145 test vectors · packages 1.0.0
 <!-- meta:end -->
 
 The same data is served live at [`/api/registry.json`](https://wimsta.com/api/registry.json); this repository is a versioned, citable copy plus small packages for JavaScript and Python. Nothing here is edited by hand: `scripts/export.mjs` pulls the registry, `scripts/make-vectors.mjs` rebuilds the test vectors.
@@ -71,14 +71,14 @@ The packages compute **one formula at a time** and return the unrounded value. C
 ## How to cite
 
 <!-- cite:start -->
-WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.08.11) [Data set]. https://wimsta.com/registry/
+WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27) [Data set]. https://wimsta.com/registry/
 
 ```bibtex
 @dataset{wimsta_formula_registry,
   author    = {{WIMSTA}},
   title     = {WIMSTA Formula Registry: body-composition and energy-expenditure equations with primary sources},
   year      = {2026},
-  version   = {2026.08.11},
+  version   = {2026.11.27},
   url       = {https://wimsta.com/registry/},
   publisher = {Zenodo}
 }
