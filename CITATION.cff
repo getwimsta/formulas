@@ -8,6 +8,7 @@ authors:
     email: "hello@wimsta.com"
 version: "2026.11.27.1"
 date-released: "2026-11-27"
+doi: "10.5281/zenodo.24588774"
 url: "https://wimsta.com/registry/"
 repository-code: "https://github.com/getwimsta/formulas"
 license: CC-BY-4.0

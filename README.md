@@ -82,7 +82,7 @@ The packages compute **one formula at a time** and return the unrounded value. C
 ## How to cite
 
 <!-- cite:start -->
-WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27.1) [Data set]. https://wimsta.com/registry/
+WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27.1) [Data set]. https://doi.org/10.5281/zenodo.24588774
 
 ```bibtex
 @dataset{wimsta_formula_registry,
@@ -90,6 +90,7 @@ WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27.1) [Data set]. http
   title     = {WIMSTA Formula Registry: body-composition and energy-expenditure equations with primary sources},
   year      = {2026},
   version   = {2026.11.27.1},
+  doi       = {10.5281/zenodo.24588774},
   url       = {https://wimsta.com/registry/},
   publisher = {Zenodo}
 }
