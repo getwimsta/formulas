@@ -1,7 +1,7 @@
 {
   "registry_version": "2026.11.27.1",
   "generated": "2026-11-27",
-  "api": "http://localhost:8799",
+  "api": "https://wimsta.com",
   "tolerance": 0.000001,
   "note": "value = unrounded result of the registry equation; api_value = /api/calc answer from the `api` URL above, rounded as the site displays it (null where the API does not return this formula on its own, e.g. katch-mcardle without body_fat_pct in the range endpoint or gallagher-ranges).",
   "vectors": [
