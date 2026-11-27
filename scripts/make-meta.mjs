@@ -105,4 +105,10 @@ put('table', table);
 put('cite', `${cite}\n\n\`\`\`bibtex\n${bib}\n\`\`\``);
 put('meta', `Registry version **${reg.registry_version}** · ${reg.formula_count} formulas · ${vec.vectors.length} test vectors · packages ${pkgVersion}`);
 writeFileSync(join(root, 'README.md'), readme);
+// Package READMEs carry the same citation block.
+const citeBlock = readme.match(/<!-- cite:start -->[\s\S]*?<!-- cite:end -->/)[0];
+for (const p of ['packages/js/README.md', 'packages/python/README.md']) {
+  const f = join(root, p);
+  writeFileSync(f, readFileSync(f, 'utf8').replace(/<!-- cite:start -->[\s\S]*?<!-- cite:end -->/, () => citeBlock));
+}
 console.log(`zenodo: ${dois.length} DOI references; doi ${DOI ?? '(none yet)'}; README updated`);
