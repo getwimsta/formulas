@@ -1,6 +1,6 @@
 # WIMSTA Formula Registry
 
-Open registry of published body-composition and energy-expenditure equations — body fat, healthy body-fat ranges, BMI, waist-to-height ratio, maximum heart rate and basal metabolic rate — each with its primary source, coefficients, inputs, sex coding, units, reported error and limitations. Human-readable pages: **https://wimsta.com/registry/**.
+Open registry of published body-composition and energy-expenditure equations — body fat, healthy body-fat ranges, BMI, waist-to-height ratio, maximum heart rate, basal metabolic rate, ideal body weight and body surface area — each with its primary source, coefficients, inputs, sex coding, units, reported error and limitations. Human-readable pages: **https://wimsta.com/registry/**.
 
 <!-- meta:start -->
 Registry version **2026.11.27.1** · 26 formulas · 254 test vectors · packages 1.0.0
@@ -77,7 +77,7 @@ The packages compute **one formula at a time** and return the unrounded value. C
 
 ## Test vectors
 
-[`data/vectors.json`](data/vectors.json): 10 profiles (5 per sex, including the API's boundary values) × every applicable formula. `value` is the unrounded result of the reference implementation; `api_value` is the live `/api/calc` answer for the same inputs, and the vectors are only written when `value` rounded the API's way equals `api_value`. Both packages must reproduce every `value` within 1e-6 before release.
+[`data/vectors.json`](data/vectors.json): 10 profiles (5 per sex, including the API's boundary values) × every applicable formula. `value` is the unrounded result of the reference implementation; `api_value` is the `/api/calc` answer for the same inputs (the API URL is recorded in the file), and the vectors are only written when `value` rounded the API's way equals `api_value`. Both packages must reproduce every `value` within 1e-6 before release.
 
 ## How to cite
 
@@ -109,6 +109,6 @@ Estimates for general information only. Not a diagnosis and not medical advice.
 
 ## En español
 
-Registro abierto de ecuaciones publicadas de composición corporal y gasto energético (grasa corporal, rangos saludables, IMC, cintura/altura, frecuencia cardiaca máxima y metabolismo basal), cada una con su fuente primaria. Páginas: **https://wimsta.com/es/registro/**. Los paquetes `wimsta-formulas` (npm y PyPI) calculan una fórmula cada vez; para un rango entre varias fórmulas, use la API: https://wimsta.com/api/calc. Datos bajo CC BY 4.0, código bajo Apache-2.0. Estimaciones con fines informativos; no es consejo médico.
+Registro abierto de ecuaciones publicadas de composición corporal y gasto energético (grasa corporal, rangos saludables, IMC, cintura/altura, frecuencia cardiaca máxima, metabolismo basal, peso ideal y superficie corporal), cada una con su fuente primaria. Páginas: **https://wimsta.com/es/registro/**. Los paquetes `wimsta-formulas` (npm y PyPI) calculan una fórmula cada vez; para un rango entre varias fórmulas, use la API: https://wimsta.com/api/calc. Datos bajo CC BY 4.0, código bajo Apache-2.0. Estimaciones con fines informativos; no es consejo médico.
 
 Contact: hello@wimsta.com

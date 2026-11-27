@@ -11,6 +11,8 @@ const i = process.argv.indexOf('--doi');
 const DOI = i > 0 ? process.argv[i + 1] : readExistingDoi();
 const reg = JSON.parse(readFileSync(join(root, 'data/registry.json'), 'utf8'));
 const vec = JSON.parse(readFileSync(join(root, 'data/vectors.json'), 'utf8'));
+const checkedN = vec.vectors.filter((v) => v.api_value !== null).length;
+if (vec.api !== 'https://wimsta.com') console.warn(`WARNING: vectors were checked against ${vec.api}, not production — regenerate before release`);
 const pkgVersion = JSON.parse(readFileSync(join(root, 'packages/js/package.json'), 'utf8')).version;
 
 function readExistingDoi() {
@@ -29,8 +31,8 @@ const description =
   `(categories: ${cats.join(', ')}), each with its primary source, coefficients, input list, sex coding, units, ` +
   `reported error, sample and limitations. Each entry records how it was verified: ` +
   `${reg.formulas.filter((f) => f.verification === 'primary').length} against the primary publication, the rest against secondary sources only.</p>` +
-  `<p>Includes test vectors (${vec.vectors.length} input → output cases from the reference implementation, cross-checked ` +
-  `against the live WIMSTA calculation API). Human-readable pages: <a href="https://wimsta.com/registry/">https://wimsta.com/registry/</a>.</p>` +
+  `<p>Includes test vectors (${vec.vectors.length} input → output cases from the reference implementation; ` +
+  `${checkedN} of them cross-checked against the WIMSTA calculation API at ${vec.api}, the rest are formulas the API does not return on their own). Human-readable pages: <a href="https://wimsta.com/registry/">https://wimsta.com/registry/</a>.</p>` +
   `<p>Estimates for general information only; not medical advice.</p>`;
 
 const zenodo = {
@@ -39,7 +41,7 @@ const zenodo = {
   creators: [{ name: 'WIMSTA' }],
   license: 'cc-by-4.0',
   description,
-  keywords: ['body composition', 'body fat', 'basal metabolic rate', 'BMI', 'waist-to-height ratio', 'maximum heart rate', 'anthropometry', 'equations'],
+  keywords: ['body composition', 'body fat', 'basal metabolic rate', 'BMI', 'waist-to-height ratio', 'maximum heart rate', 'ideal body weight', 'body surface area', 'anthropometry', 'equations'],
   version: reg.registry_version,
   related_identifiers: [
     { relation: 'isDocumentedBy', identifier: 'https://wimsta.com/registry/', scheme: 'url' },

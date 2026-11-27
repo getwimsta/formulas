@@ -468,7 +468,7 @@ export const registry: Registry = {
       "verification": "secondary",
       "independent_derivation": true,
       "limitations": [
-        "The famous one, and the least accurate for an individual — shown with its spread, plus six more formulas in the heart-rate calculator."
+        "The famous one, and the least accurate for an individual — shown with its spread, beside the other formulas in the heart-rate calculator."
       ],
       "canonical_page": "https://wimsta.com/220-minus-age/",
       "coefficients": {
@@ -526,16 +526,16 @@ export const registry: Registry = {
         "doi": "https://doi.org/10.1080/02701367.1982.10605252"
       },
       "sample": {
-        "population": "not verified",
+        "population": "national-level athletes (per Robergs & Landwehr 2002)",
         "reference_method": "measured max heart rate"
       },
       "error": {
-        "note": "error not verified"
+        "note": "r² 0.72 (secondary source)"
       },
       "verification": "secondary",
       "independent_derivation": true,
       "limitations": [
-        "An early estimate; we could not read the primary abstract, so no sample or error figure is claimed."
+        "An early estimate derived in athletes; the primary paper was not available to us — sample and r² come from the Robergs & Landwehr 2002 review."
       ],
       "canonical_page": "https://wimsta.com/target-heart-rate-calculator/",
       "coefficients": {
@@ -563,12 +563,14 @@ export const registry: Registry = {
         "reference_method": "treadmill test to volitional maximum"
       },
       "error": {
-        "note": "slope −0.685 bpm/yr"
+        "note": "Sxy 6.4 bpm · r² 0.45",
+        "value": 6.4,
+        "unit": "bpm"
       },
       "verification": "secondary",
       "independent_derivation": true,
       "limitations": [
-        "Derived in men only. The slope is in the abstract; the 205.8 intercept comes from secondary sources."
+        "Derived in men only. The slope is in the abstract; the 205.8 intercept and the error come from the Robergs & Landwehr 2002 review."
       ],
       "canonical_page": "https://wimsta.com/target-heart-rate-calculator/",
       "coefficients": {
@@ -772,7 +774,7 @@ export const registry: Registry = {
       "verification": "secondary",
       "independent_derivation": true,
       "limitations": [
-        "A drug-dosing convention, never fitted to health data — not a target weight."
+        "A drug-dosing convention, never fitted to health data — not a target weight. Defined for heights over 5 ft (152.4 cm)."
       ],
       "canonical_page": "https://wimsta.com/ideal-weight-calculator/",
       "coefficients": {
@@ -786,7 +788,7 @@ export const registry: Registry = {
         }
       },
       "sex_coding": "separate equations for men and women",
-      "units": "metric"
+      "units": "imperial"
     },
     {
       "id": "robinson",
@@ -813,7 +815,7 @@ export const registry: Registry = {
       "verification": "primary",
       "independent_derivation": true,
       "limitations": [
-        "Fitted to life-insurance tables, not to health outcomes."
+        "Fitted to life-insurance tables, not to health outcomes. Defined for heights over 5 ft (152.4 cm)."
       ],
       "canonical_page": "https://wimsta.com/ideal-weight-calculator/",
       "coefficients": {
@@ -827,7 +829,7 @@ export const registry: Registry = {
         }
       },
       "sex_coding": "separate equations for men and women",
-      "units": "metric"
+      "units": "imperial"
     },
     {
       "id": "miller-ideal-weight",
@@ -846,7 +848,7 @@ export const registry: Registry = {
       },
       "sample": {
         "population": "not verified",
-        "reference_method": "insurance-table regression"
+        "reference_method": "not verified"
       },
       "error": {
         "note": "not stated"
@@ -854,7 +856,7 @@ export const registry: Registry = {
       "verification": "secondary",
       "independent_derivation": true,
       "limitations": [
-        "Published as a letter, without an abstract; not fitted to health outcomes."
+        "Published as a letter, without an abstract. Defined for heights over 5 ft (152.4 cm); below that it is extrapolated."
       ],
       "canonical_page": "https://wimsta.com/ideal-weight-calculator/",
       "coefficients": {
@@ -868,7 +870,7 @@ export const registry: Registry = {
         }
       },
       "sex_coding": "separate equations for men and women",
-      "units": "metric"
+      "units": "imperial"
     },
     {
       "id": "peterson",
@@ -892,7 +894,7 @@ export const registry: Registry = {
         "note": "mean accuracy 0.5–0.7%"
       },
       "verification": "secondary",
-      "independent_derivation": true,
+      "independent_derivation": false,
       "limitations": [
         "Gives the weight for a chosen BMI (we use 22), so it inherits every limit of BMI."
       ],

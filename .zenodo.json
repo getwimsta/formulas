@@ -7,7 +7,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "description": "<p>Open registry of 26 published equations for body composition and energy expenditure (categories: body-fat, body-fat-ranges, bmi, waist-to-height, max-heart-rate, bmr, ideal-weight, bsa), each with its primary source, coefficients, input list, sex coding, units, reported error, sample and limitations. Each entry records how it was verified: 13 against the primary publication, the rest against secondary sources only.</p><p>Includes test vectors (254 input → output cases from the reference implementation, cross-checked against the live WIMSTA calculation API). Human-readable pages: <a href=\"https://wimsta.com/registry/\">https://wimsta.com/registry/</a>.</p><p>Estimates for general information only; not medical advice.</p>",
+  "description": "<p>Open registry of 26 published equations for body composition and energy expenditure (categories: body-fat, body-fat-ranges, bmi, waist-to-height, max-heart-rate, bmr, ideal-weight, bsa), each with its primary source, coefficients, input list, sex coding, units, reported error, sample and limitations. Each entry records how it was verified: 13 against the primary publication, the rest against secondary sources only.</p><p>Includes test vectors (254 input → output cases from the reference implementation; 244 of them cross-checked against the WIMSTA calculation API at http://localhost:8799, the rest are formulas the API does not return on their own). Human-readable pages: <a href=\"https://wimsta.com/registry/\">https://wimsta.com/registry/</a>.</p><p>Estimates for general information only; not medical advice.</p>",
   "keywords": [
     "body composition",
     "body fat",
@@ -15,6 +15,8 @@
     "BMI",
     "waist-to-height ratio",
     "maximum heart rate",
+    "ideal body weight",
+    "body surface area",
     "anthropometry",
     "equations"
   ],
