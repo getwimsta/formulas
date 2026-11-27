@@ -1,7 +1,7 @@
 {
-  "registry_version": "2026.11.27",
-  "generated": "2026-11-26",
-  "api": "https://wimsta.com",
+  "registry_version": "2026.11.27.1",
+  "generated": "2026-11-27",
+  "api": "http://localhost:8799",
   "tolerance": 0.000001,
   "note": "value = unrounded result of the registry equation; api_value = live /api/calc answer, rounded as the site displays it (null where the API does not return this formula on its own, e.g. katch-mcardle without body_fat_pct in the range endpoint or gallagher-ranges).",
   "vectors": [
@@ -17,7 +17,7 @@
       "unit": "%",
       "api_value": 22.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -31,7 +31,7 @@
       "unit": "%",
       "api_value": 23.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -46,7 +46,7 @@
       "unit": "%",
       "api_value": 19,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -59,7 +59,7 @@
       "unit": "%",
       "api_value": 26,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -75,7 +75,7 @@
       "unit": "%",
       "api_value": 18.3,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -91,7 +91,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -103,7 +103,7 @@
       "unit": "kg/m²",
       "api_value": 20,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -115,7 +115,7 @@
       "unit": "kg/m²",
       "api_value": 21.2,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -127,7 +127,7 @@
       "unit": "ratio",
       "api_value": 0.4,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -138,7 +138,7 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gulati",
@@ -150,7 +150,7 @@
       "unit": "bpm",
       "api_value": 190,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -161,7 +161,54 @@
       "unit": "bpm",
       "api_value": 202,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 18
+      },
+      "value": 199.48,
+      "unit": "bpm",
+      "api_value": 199,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 18
+      },
+      "value": 193.502,
+      "unit": "bpm",
+      "api_value": 194,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 18
+      },
+      "value": 193.47,
+      "unit": "bpm",
+      "api_value": 193,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "female",
+        "age": 18,
+        "height_cm": 150,
+        "weight_kg": 45
+      },
+      "value": 1136.5,
+      "unit": "kcal/day",
+      "api_value": 1137,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -175,7 +222,7 @@
       "unit": "kcal/day",
       "api_value": 1279,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -189,7 +236,7 @@
       "unit": "kcal/day",
       "api_value": 1250,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -201,7 +248,90 @@
       "unit": "kcal/day",
       "api_value": 1128,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 150
+      },
+      "value": 43.326771653543304,
+      "unit": "kg",
+      "api_value": 43,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 150
+      },
+      "value": 47.110944881889765,
+      "unit": "kg",
+      "api_value": 47,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 150
+      },
+      "value": 51.81496062992126,
+      "unit": "kg",
+      "api_value": 52,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 150
+      },
+      "value": 48.400000000000006,
+      "unit": "kg",
+      "api_value": 48,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 150,
+        "weight_kg": 45
+      },
+      "value": 1.3693063937629153,
+      "unit": "m²",
+      "api_value": 1.37,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 150,
+        "weight_kg": 45
+      },
+      "value": 1.3697704874403325,
+      "unit": "m²",
+      "api_value": 1.37,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 150,
+        "weight_kg": 45
+      },
+      "value": 1.3698738036227347,
+      "unit": "m²",
+      "api_value": 1.37,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -215,7 +345,7 @@
       "unit": "%",
       "api_value": 28.8,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -229,7 +359,7 @@
       "unit": "%",
       "api_value": 30.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -244,7 +374,7 @@
       "unit": "%",
       "api_value": 27.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -257,7 +387,7 @@
       "unit": "%",
       "api_value": 30.2,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -273,7 +403,7 @@
       "unit": "%",
       "api_value": 22.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -289,7 +419,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -301,7 +431,7 @@
       "unit": "kg/m²",
       "api_value": 22.8,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -313,7 +443,7 @@
       "unit": "kg/m²",
       "api_value": 23,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -325,7 +455,7 @@
       "unit": "ratio",
       "api_value": 0.44,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -336,7 +466,7 @@
       "unit": "bpm",
       "api_value": 187,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gulati",
@@ -348,7 +478,7 @@
       "unit": "bpm",
       "api_value": 180,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -359,7 +489,54 @@
       "unit": "bpm",
       "api_value": 190,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 30
+      },
+      "value": 191.8,
+      "unit": "bpm",
+      "api_value": 192,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 30
+      },
+      "value": 184.97000000000003,
+      "unit": "bpm",
+      "api_value": 185,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 30
+      },
+      "value": 185.25,
+      "unit": "bpm",
+      "api_value": 185,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "female",
+        "age": 30,
+        "height_cm": 165,
+        "weight_kg": 62
+      },
+      "value": 1340.25,
+      "unit": "kcal/day",
+      "api_value": 1340,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -373,7 +550,7 @@
       "unit": "kcal/day",
       "api_value": 1413,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -387,7 +564,7 @@
       "unit": "kcal/day",
       "api_value": 1402,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -399,7 +576,90 @@
       "unit": "kcal/day",
       "api_value": 1334,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 165
+      },
+      "value": 56.90944881889763,
+      "unit": "kg",
+      "api_value": 57,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 165
+      },
+      "value": 56.855039370078735,
+      "unit": "kg",
+      "api_value": 57,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 165
+      },
+      "value": 59.846456692913385,
+      "unit": "kg",
+      "api_value": 60,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 165
+      },
+      "value": 59.95,
+      "unit": "kg",
+      "api_value": 60,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 165,
+        "weight_kg": 62
+      },
+      "value": 1.6857243744653712,
+      "unit": "m²",
+      "api_value": 1.69,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 165,
+        "weight_kg": 62
+      },
+      "value": 1.6819328436037453,
+      "unit": "m²",
+      "api_value": 1.68,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 165,
+        "weight_kg": 62
+      },
+      "value": 1.6902042202288659,
+      "unit": "m²",
+      "api_value": 1.69,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -413,7 +673,7 @@
       "unit": "%",
       "api_value": 41.1,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -427,7 +687,7 @@
       "unit": "%",
       "api_value": 42.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -442,7 +702,7 @@
       "unit": "%",
       "api_value": 41,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -455,7 +715,7 @@
       "unit": "%",
       "api_value": 39.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -471,7 +731,7 @@
       "unit": "%",
       "api_value": 31.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -487,7 +747,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -499,7 +759,7 @@
       "unit": "kg/m²",
       "api_value": 29.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -511,7 +771,7 @@
       "unit": "kg/m²",
       "api_value": 29.5,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -523,7 +783,7 @@
       "unit": "ratio",
       "api_value": 0.55,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -534,7 +794,7 @@
       "unit": "bpm",
       "api_value": 175,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gulati",
@@ -546,7 +806,7 @@
       "unit": "bpm",
       "api_value": 165,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -557,7 +817,54 @@
       "unit": "bpm",
       "api_value": 173,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 47
+      },
+      "value": 180.92,
+      "unit": "bpm",
+      "api_value": 181,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 47
+      },
+      "value": 172.883,
+      "unit": "bpm",
+      "api_value": 173,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 47
+      },
+      "value": 173.60500000000002,
+      "unit": "bpm",
+      "api_value": 174,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "female",
+        "age": 47,
+        "height_cm": 172,
+        "weight_kg": 88
+      },
+      "value": 1559,
+      "unit": "kcal/day",
+      "api_value": 1559,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -571,7 +878,7 @@
       "unit": "kcal/day",
       "api_value": 1595,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -585,7 +892,7 @@
       "unit": "kcal/day",
       "api_value": 1591,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -597,7 +904,90 @@
       "unit": "kcal/day",
       "api_value": 1548,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 172
+      },
+      "value": 63.248031496062985,
+      "unit": "kg",
+      "api_value": 63,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 172
+      },
+      "value": 61.40228346456693,
+      "unit": "kg",
+      "api_value": 61,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 172
+      },
+      "value": 63.59448818897638,
+      "unit": "kg",
+      "api_value": 64,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 172
+      },
+      "value": 65.34,
+      "unit": "kg",
+      "api_value": 65,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 172,
+        "weight_kg": 88
+      },
+      "value": 2.0504741998972933,
+      "unit": "m²",
+      "api_value": 2.05,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 172,
+        "weight_kg": 88
+      },
+      "value": 2.0115442161787693,
+      "unit": "m²",
+      "api_value": 2.01,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 172,
+        "weight_kg": 88
+      },
+      "value": 2.0743715769068953,
+      "unit": "m²",
+      "api_value": 2.07,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -611,7 +1001,7 @@
       "unit": "%",
       "api_value": 43.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -625,7 +1015,7 @@
       "unit": "%",
       "api_value": 42.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -640,7 +1030,7 @@
       "unit": "%",
       "api_value": 40,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -653,7 +1043,7 @@
       "unit": "%",
       "api_value": 40.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -669,7 +1059,7 @@
       "unit": "%",
       "api_value": 29.3,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -685,7 +1075,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -697,7 +1087,7 @@
       "unit": "kg/m²",
       "api_value": 28,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -709,7 +1099,7 @@
       "unit": "kg/m²",
       "api_value": 29,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -721,7 +1111,7 @@
       "unit": "ratio",
       "api_value": 0.57,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -732,7 +1122,7 @@
       "unit": "bpm",
       "api_value": 160,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gulati",
@@ -744,7 +1134,7 @@
       "unit": "bpm",
       "api_value": 146,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -755,7 +1145,54 @@
       "unit": "bpm",
       "api_value": 152,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 68
+      },
+      "value": 167.48,
+      "unit": "bpm",
+      "api_value": 167,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 68
+      },
+      "value": 157.952,
+      "unit": "bpm",
+      "api_value": 158,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 68
+      },
+      "value": 159.22,
+      "unit": "bpm",
+      "api_value": 159,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "female",
+        "age": 68,
+        "height_cm": 158,
+        "weight_kg": 70
+      },
+      "value": 1186.5,
+      "unit": "kcal/day",
+      "api_value": 1187,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -769,7 +1206,7 @@
       "unit": "kcal/day",
       "api_value": 1299,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -783,7 +1220,7 @@
       "unit": "kcal/day",
       "api_value": 1290,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -795,7 +1232,90 @@
       "unit": "kcal/day",
       "api_value": 1277,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 158
+      },
+      "value": 50.57086614173228,
+      "unit": "kg",
+      "api_value": 51,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 158
+      },
+      "value": 52.30779527559055,
+      "unit": "kg",
+      "api_value": 52,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 158
+      },
+      "value": 56.09842519685039,
+      "unit": "kg",
+      "api_value": 56,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 158
+      },
+      "value": 54.56000000000001,
+      "unit": "kg",
+      "api_value": 55,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 158,
+        "weight_kg": 70
+      },
+      "value": 1.7527755766846542,
+      "unit": "m²",
+      "api_value": 1.75,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 158,
+        "weight_kg": 70
+      },
+      "value": 1.7161663361102266,
+      "unit": "m²",
+      "api_value": 1.72,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 158,
+        "weight_kg": 70
+      },
+      "value": 1.7734611978575439,
+      "unit": "m²",
+      "api_value": 1.77,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -809,7 +1329,7 @@
       "unit": "%",
       "api_value": 41.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -823,7 +1343,7 @@
       "unit": "%",
       "api_value": 39.1,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -838,7 +1358,7 @@
       "unit": "%",
       "api_value": 15.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -851,7 +1371,7 @@
       "unit": "%",
       "api_value": 31.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -867,7 +1387,7 @@
       "unit": "%",
       "api_value": 15.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -883,7 +1403,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -895,7 +1415,7 @@
       "unit": "kg/m²",
       "api_value": 20,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -907,7 +1427,7 @@
       "unit": "kg/m²",
       "api_value": 26,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -919,7 +1439,7 @@
       "unit": "ratio",
       "api_value": 0.45,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -930,7 +1450,7 @@
       "unit": "bpm",
       "api_value": 138,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gulati",
@@ -942,7 +1462,7 @@
       "unit": "bpm",
       "api_value": 118,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -953,7 +1473,54 @@
       "unit": "bpm",
       "api_value": 120,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 100
+      },
+      "value": 147,
+      "unit": "bpm",
+      "api_value": 147,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 100
+      },
+      "value": 135.20000000000002,
+      "unit": "bpm",
+      "api_value": 135,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 100
+      },
+      "value": 137.3,
+      "unit": "bpm",
+      "api_value": 137,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "female",
+        "age": 100,
+        "height_cm": 100,
+        "weight_kg": 20
+      },
+      "value": 164,
+      "unit": "kcal/day",
+      "api_value": 164,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -967,7 +1534,7 @@
       "unit": "kcal/day",
       "api_value": 564,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -981,7 +1548,7 @@
       "unit": "kcal/day",
       "api_value": 509,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -993,7 +1560,78 @@
       "unit": "kcal/day",
       "api_value": 789,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 100
+      },
+      "value": 14.630629921259839,
+      "unit": "kg",
+      "api_value": 15,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "female",
+        "height_cm": 100
+      },
+      "value": 25.04330708661417,
+      "unit": "kg",
+      "api_value": 25,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 100
+      },
+      "value": 9.900000000000006,
+      "unit": "kg",
+      "api_value": 10,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 100,
+        "weight_kg": 20
+      },
+      "value": 0.7453559924999299,
+      "unit": "m²",
+      "api_value": 0.75,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 100,
+        "weight_kg": 20
+      },
+      "value": 0.723276028966899,
+      "unit": "m²",
+      "api_value": 0.72,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 100,
+        "weight_kg": 20
+      },
+      "value": 0.7541786387006676,
+      "unit": "m²",
+      "api_value": 0.75,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -1007,7 +1645,7 @@
       "unit": "%",
       "api_value": 55.1,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -1021,7 +1659,7 @@
       "unit": "%",
       "api_value": 51.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -1035,7 +1673,7 @@
       "unit": "%",
       "api_value": 38.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -1048,7 +1686,7 @@
       "unit": "%",
       "api_value": 32.8,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -1064,7 +1702,7 @@
       "unit": "%",
       "api_value": 35.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1080,7 +1718,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -1092,7 +1730,7 @@
       "unit": "kg/m²",
       "api_value": 56,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1104,7 +1742,7 @@
       "unit": "kg/m²",
       "api_value": 46,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1116,7 +1754,7 @@
       "unit": "ratio",
       "api_value": 0.64,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -1127,7 +1765,7 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -1138,7 +1776,54 @@
       "unit": "bpm",
       "api_value": 202,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 18
+      },
+      "value": 199.48,
+      "unit": "bpm",
+      "api_value": 199,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 18
+      },
+      "value": 193.502,
+      "unit": "bpm",
+      "api_value": 194,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 18
+      },
+      "value": 193.47,
+      "unit": "bpm",
+      "api_value": 193,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "male",
+        "age": 18,
+        "height_cm": 250,
+        "weight_kg": 350
+      },
+      "value": 4977.5,
+      "unit": "kcal/day",
+      "api_value": 4978,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1152,7 +1837,7 @@
       "unit": "kcal/day",
       "api_value": 6009,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1166,7 +1851,7 @@
       "unit": "kcal/day",
       "api_value": 5875,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1178,7 +1863,90 @@
       "unit": "kcal/day",
       "api_value": 3016,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 250
+      },
+      "value": 138.37795275590548,
+      "unit": "kg",
+      "api_value": 138,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 250
+      },
+      "value": 122.73661417322833,
+      "unit": "kg",
+      "api_value": 123,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 250
+      },
+      "value": 110.3795275590551,
+      "unit": "kg",
+      "api_value": 110,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 250
+      },
+      "value": 125.4,
+      "unit": "kg",
+      "api_value": 125,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 250,
+        "weight_kg": 350
+      },
+      "value": 4.930066485916347,
+      "unit": "m²",
+      "api_value": 4.93,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 250,
+        "weight_kg": 350
+      },
+      "value": 4.743531061832615,
+      "unit": "m²",
+      "api_value": 4.74,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 250,
+        "weight_kg": 350
+      },
+      "value": 5.05502734623084,
+      "unit": "m²",
+      "api_value": 5.06,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -1192,7 +1960,7 @@
       "unit": "%",
       "api_value": 17.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -1206,7 +1974,7 @@
       "unit": "%",
       "api_value": 18.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -1220,7 +1988,7 @@
       "unit": "%",
       "api_value": 15.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -1233,7 +2001,7 @@
       "unit": "%",
       "api_value": 19.5,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -1249,7 +2017,7 @@
       "unit": "%",
       "api_value": 10.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1265,7 +2033,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -1277,7 +2045,7 @@
       "unit": "kg/m²",
       "api_value": 23.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1289,7 +2057,7 @@
       "unit": "kg/m²",
       "api_value": 22.8,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1301,7 +2069,7 @@
       "unit": "ratio",
       "api_value": 0.45,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -1312,7 +2080,7 @@
       "unit": "bpm",
       "api_value": 191,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -1323,7 +2091,54 @@
       "unit": "bpm",
       "api_value": 195,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 25
+      },
+      "value": 195,
+      "unit": "bpm",
+      "api_value": 195,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 25
+      },
+      "value": 188.525,
+      "unit": "bpm",
+      "api_value": 189,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 25
+      },
+      "value": 188.675,
+      "unit": "bpm",
+      "api_value": 189,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "male",
+        "age": 25,
+        "height_cm": 178,
+        "weight_kg": 74
+      },
+      "value": 1732.5,
+      "unit": "kcal/day",
+      "api_value": 1733,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1337,7 +2152,7 @@
       "unit": "kcal/day",
       "api_value": 1806,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1351,7 +2166,7 @@
       "unit": "kcal/day",
       "api_value": 1792,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1363,7 +2178,90 @@
       "unit": "kcal/day",
       "api_value": 1745,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 178
+      },
+      "value": 73.18110236220471,
+      "unit": "kg",
+      "api_value": 73,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 178
+      },
+      "value": 70.29566929133858,
+      "unit": "kg",
+      "api_value": 70,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 178
+      },
+      "value": 70.41102362204724,
+      "unit": "kg",
+      "api_value": 70,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 178
+      },
+      "value": 69.96000000000001,
+      "unit": "kg",
+      "api_value": 70,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 178,
+        "weight_kg": 74
+      },
+      "value": 1.912822231387143,
+      "unit": "m²",
+      "api_value": 1.91,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 178,
+        "weight_kg": 74
+      },
+      "value": 1.9157741380712474,
+      "unit": "m²",
+      "api_value": 1.92,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 178,
+        "weight_kg": 74
+      },
+      "value": 1.915665171448292,
+      "unit": "m²",
+      "api_value": 1.92,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -1377,7 +2275,7 @@
       "unit": "%",
       "api_value": 23.3,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -1391,7 +2289,7 @@
       "unit": "%",
       "api_value": 24.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -1405,7 +2303,7 @@
       "unit": "%",
       "api_value": 20.5,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -1418,7 +2316,7 @@
       "unit": "%",
       "api_value": 23.1,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -1434,7 +2332,7 @@
       "unit": "%",
       "api_value": 16.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1450,7 +2348,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -1462,7 +2360,7 @@
       "unit": "kg/m²",
       "api_value": 26.2,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1474,7 +2372,7 @@
       "unit": "kg/m²",
       "api_value": 25.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1486,7 +2384,7 @@
       "unit": "ratio",
       "api_value": 0.49,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -1497,7 +2395,7 @@
       "unit": "bpm",
       "api_value": 184,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -1508,7 +2406,54 @@
       "unit": "bpm",
       "api_value": 185,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 35
+      },
+      "value": 188.6,
+      "unit": "bpm",
+      "api_value": 189,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 35
+      },
+      "value": 181.41500000000002,
+      "unit": "bpm",
+      "api_value": 181,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 35
+      },
+      "value": 181.82500000000002,
+      "unit": "bpm",
+      "api_value": 182,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "male",
+        "age": 35,
+        "height_cm": 180,
+        "weight_kg": 85
+      },
+      "value": 1805,
+      "unit": "kcal/day",
+      "api_value": 1805,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1522,7 +2467,7 @@
       "unit": "kcal/day",
       "api_value": 1900,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1536,7 +2481,7 @@
       "unit": "kcal/day",
       "api_value": 1892,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1548,7 +2493,90 @@
       "unit": "kcal/day",
       "api_value": 1839,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 180
+      },
+      "value": 74.99212598425197,
+      "unit": "kg",
+      "api_value": 75,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 180
+      },
+      "value": 71.7523622047244,
+      "unit": "kg",
+      "api_value": 72,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 180
+      },
+      "value": 71.52125984251968,
+      "unit": "kg",
+      "api_value": 72,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 180
+      },
+      "value": 71.50000000000001,
+      "unit": "kg",
+      "api_value": 72,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 180,
+        "weight_kg": 85
+      },
+      "value": 2.0615528128088303,
+      "unit": "m²",
+      "api_value": 2.06,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 180,
+        "weight_kg": 85
+      },
+      "value": 2.0485281361702055,
+      "unit": "m²",
+      "api_value": 2.05,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 180,
+        "weight_kg": 85
+      },
+      "value": 2.0730597278353713,
+      "unit": "m²",
+      "api_value": 2.07,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -1562,7 +2590,7 @@
       "unit": "%",
       "api_value": 35.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -1576,7 +2604,7 @@
       "unit": "%",
       "api_value": 35.3,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -1590,7 +2618,7 @@
       "unit": "%",
       "api_value": 30.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -1603,7 +2631,7 @@
       "unit": "%",
       "api_value": 30.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -1619,7 +2647,7 @@
       "unit": "%",
       "api_value": 22,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1635,7 +2663,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -1647,7 +2675,7 @@
       "unit": "kg/m²",
       "api_value": 33.2,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1659,7 +2687,7 @@
       "unit": "kg/m²",
       "api_value": 33.1,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1671,7 +2699,7 @@
       "unit": "ratio",
       "api_value": 0.6,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -1682,7 +2710,7 @@
       "unit": "bpm",
       "api_value": 172,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -1693,7 +2721,54 @@
       "unit": "bpm",
       "api_value": 168,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 52
+      },
+      "value": 177.72,
+      "unit": "bpm",
+      "api_value": 178,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 52
+      },
+      "value": 169.328,
+      "unit": "bpm",
+      "api_value": 169,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 52
+      },
+      "value": 170.18,
+      "unit": "bpm",
+      "api_value": 170,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "male",
+        "age": 52,
+        "height_cm": 170,
+        "weight_kg": 96
+      },
+      "value": 1767.5,
+      "unit": "kcal/day",
+      "api_value": 1768,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1707,7 +2782,7 @@
       "unit": "kcal/day",
       "api_value": 1886,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1721,7 +2796,7 @@
       "unit": "kcal/day",
       "api_value": 1895,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1733,7 +2808,90 @@
       "unit": "kcal/day",
       "api_value": 1822,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 170
+      },
+      "value": 65.93700787401573,
+      "unit": "kg",
+      "api_value": 66,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 170
+      },
+      "value": 64.46889763779527,
+      "unit": "kg",
+      "api_value": 64,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 170
+      },
+      "value": 65.97007874015748,
+      "unit": "kg",
+      "api_value": 66,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 170
+      },
+      "value": 63.800000000000004,
+      "unit": "kg",
+      "api_value": 64,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 170,
+        "weight_kg": 96
+      },
+      "value": 2.1291625896895083,
+      "unit": "m²",
+      "api_value": 2.13,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 170,
+        "weight_kg": 96
+      },
+      "value": 2.0696984084323486,
+      "unit": "m²",
+      "api_value": 2.07,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 170,
+        "weight_kg": 96
+      },
+      "value": 2.1636933844582464,
+      "unit": "m²",
+      "api_value": 2.16,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "deurenberg",
@@ -1747,7 +2905,7 @@
       "unit": "%",
       "api_value": 27.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "cun-bae",
@@ -1761,7 +2919,7 @@
       "unit": "%",
       "api_value": 24.9,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "us-navy",
@@ -1775,7 +2933,7 @@
       "unit": "%",
       "api_value": 21.3,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "rfm",
@@ -1788,7 +2946,7 @@
       "unit": "%",
       "api_value": 22.7,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "covert-bailey",
@@ -1804,7 +2962,7 @@
       "unit": "%",
       "api_value": 19.4,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "gallagher-ranges",
@@ -1820,7 +2978,7 @@
       "unit": "%",
       "api_value": null,
       "api_round_digits": null,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "who-bmi",
@@ -1832,7 +2990,7 @@
       "unit": "kg/m²",
       "api_value": 22,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "trefethen-bmi",
@@ -1844,7 +3002,7 @@
       "unit": "kg/m²",
       "api_value": 20.6,
       "api_round_digits": 1,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "ashwell-whtr",
@@ -1856,7 +3014,7 @@
       "unit": "ratio",
       "api_value": 0.48,
       "api_round_digits": 2,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "tanaka",
@@ -1867,7 +3025,7 @@
       "unit": "bpm",
       "api_value": 154,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "fox",
@@ -1878,7 +3036,54 @@
       "unit": "bpm",
       "api_value": 143,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "nes",
+      "inputs": {
+        "age": 77
+      },
+      "value": 161.72,
+      "unit": "bpm",
+      "api_value": 162,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "londeree",
+      "inputs": {
+        "age": 77
+      },
+      "value": 151.553,
+      "unit": "bpm",
+      "api_value": 152,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "inbar",
+      "inputs": {
+        "age": 77
+      },
+      "value": 153.055,
+      "unit": "bpm",
+      "api_value": 153,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mifflin-st-jeor",
+      "inputs": {
+        "sex": "male",
+        "age": 77,
+        "height_cm": 192,
+        "weight_kg": 81
+      },
+      "value": 1630,
+      "unit": "kcal/day",
+      "api_value": 1630,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1919",
@@ -1892,7 +3097,7 @@
       "unit": "kcal/day",
       "api_value": 1621,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "harris-benedict-1984",
@@ -1906,7 +3111,7 @@
       "unit": "kcal/day",
       "api_value": 1658,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
     },
     {
       "formula_id": "katch-mcardle",
@@ -1918,7 +3123,90 @@
       "unit": "kcal/day",
       "api_value": 1700,
       "api_round_digits": 0,
-      "registry_version": "2026.11.27"
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "devine",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 192
+      },
+      "value": 85.85826771653542,
+      "unit": "kg",
+      "api_value": 86,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "robinson",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 192
+      },
+      "value": 80.49251968503937,
+      "unit": "kg",
+      "api_value": 80,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "miller-ideal-weight",
+      "inputs": {
+        "sex": "male",
+        "height_cm": 192
+      },
+      "value": 78.18267716535433,
+      "unit": "kg",
+      "api_value": 78,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "peterson",
+      "inputs": {
+        "height_cm": 192
+      },
+      "value": 80.74000000000001,
+      "unit": "kg",
+      "api_value": 81,
+      "api_round_digits": 0,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "mosteller",
+      "inputs": {
+        "height_cm": 192,
+        "weight_kg": 81
+      },
+      "value": 2.078460969082653,
+      "unit": "m²",
+      "api_value": 2.08,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "du-bois",
+      "inputs": {
+        "height_cm": 192,
+        "weight_kg": 81
+      },
+      "value": 2.1031286880910463,
+      "unit": "m²",
+      "api_value": 2.1,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
+    },
+    {
+      "formula_id": "haycock",
+      "inputs": {
+        "height_cm": 192,
+        "weight_kg": 81
+      },
+      "value": 2.0723549646907644,
+      "unit": "m²",
+      "api_value": 2.07,
+      "api_round_digits": 2,
+      "registry_version": "2026.11.27.1"
     }
   ]
 }

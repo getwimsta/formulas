@@ -20,11 +20,11 @@ for (const [name, mod] of [['esm', esm], ['cjs', cjs]]) {
     console.log(`${name}: ${n}/${V.length} vectors`);
   });
   test(`${name}: errors`, () => {
-    assert.throws(() => mod.calculate('mifflin-st-jeor', {}), /unknown formula/);
+    assert.throws(() => mod.calculate('astrand', {}), /unknown formula/);
     assert.throws(() => mod.calculate('fox', { age: 17 }), /age must be/);
     assert.throws(() => mod.calculate('gulati', { sex: 'male', age: 40 }), /women only/);
     assert.throws(() => mod.calculate('us-navy', { sex: 'male', height_cm: 180, neck_cm: 39, waist_cm: 88 }), /abdomen_cm/);
     assert.equal(mod.REGISTRY_VERSION, mod.registry.registry_version);
-    assert.equal(mod.listFormulas({ category: 'bmr' }).length, 3);
+    assert.equal(mod.listFormulas({ category: 'bmr' }).length, 4);
   });
 }

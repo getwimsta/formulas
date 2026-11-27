@@ -2,7 +2,8 @@
  * Registry formulas — one pure function per entry of /api/registry.json.
  *
  * This file is the single source of the equations: the site's calculators
- * (bmi.ts, bodyfat.ts, bodyfat-ranges.ts, bmr.ts, maxhr.ts, whtr.ts) call these
+ * (bmi.ts, bodyfat.ts, bodyfat-ranges.ts, bmr.ts, maxhr.ts, whtr.ts,
+ * ideal-weight.ts, bsa.ts) call these
  * functions, and the public package `wimsta-formulas` is built from this file
  * by `scripts/export-formulas.mjs`. Rules:
  *   - only formulas that are in the registry live here;
@@ -170,6 +171,15 @@ export const gulati = (age: number, sex: Sex): number | null =>
 /** fox: 220 − age. */
 export const fox = (age: number): number => 220 - age;
 
+/** nes (HUNT, 2013): 211 − 0.64 · age. */
+export const nes = (age: number): number => 211 - 0.64 * age;
+
+/** londeree (Londeree & Moeschberger 1982): 206.3 − 0.711 · age. */
+export const londeree = (age: number): number => 206.3 - 0.711 * age;
+
+/** inbar (1994): 205.8 − 0.685 · age. */
+export const inbar = (age: number): number => 205.8 - 0.685 * age;
+
 // ---------------------------------------------------------------- bmr
 
 export interface BmrInputs {
@@ -178,6 +188,13 @@ export interface BmrInputs {
   height: number | null;
   age: number | null;
   bodyFat?: number | null; // % — Katch–McArdle only
+}
+
+/** mifflin-st-jeor (1990), in its usual rounded form: 10·w + 6.25·h − 5·age + 5 (men) / −161 (women). */
+export function mifflinStJeor(m: BmrInputs): number | null {
+  if (!ok(m.weight) || !ok(m.height) || !ok(m.age)) return null;
+  const { weight: w, height: h, age: a } = m;
+  return 10 * w + 6.25 * h - 5 * a + (m.sex === 'male' ? 5 : -161);
 }
 
 /** harris-benedict-1919 (original). */
@@ -204,3 +221,52 @@ export function katchMcArdle(m: Pick<BmrInputs, 'weight' | 'bodyFat'>): number |
   const lean = m.weight * (1 - m.bodyFat / 100);
   return 370 + 21.6 * lean;
 }
+
+// ---------------------------------------------------------------- ideal-weight
+
+/** Inches above 5 ft (60 in) — the imperial base of the drug-dosing formulas. */
+const inchesOver60 = (heightCm: number): number => (heightCm - 152.4) / 2.54;
+
+const positive = (v: number): number | null => (Number.isFinite(v) && v > 0 ? v : null);
+
+/** devine (1974): 50.0 (men) / 45.5 (women) + 2.3 kg per inch over 5 ft. */
+export function devine(heightCm: number, sex: Sex): number | null {
+  if (!ok(heightCm)) return null;
+  const io = inchesOver60(heightCm);
+  return positive(sex === 'male' ? 50.0 + 2.3 * io : 45.5 + 2.3 * io);
+}
+
+/** robinson (1983): 51.65 + 1.85 (men) / 48.67 + 1.65 (women) kg per inch over 5 ft. */
+export function robinson(heightCm: number, sex: Sex): number | null {
+  if (!ok(heightCm)) return null;
+  const io = inchesOver60(heightCm);
+  return positive(sex === 'male' ? 51.65 + 1.85 * io : 48.67 + 1.65 * io);
+}
+
+/** miller-ideal-weight (1983): 56.2 + 1.41 (men) / 53.1 + 1.36 (women) kg per inch over 5 ft. */
+export function millerIdealWeight(heightCm: number, sex: Sex): number | null {
+  if (!ok(heightCm)) return null;
+  const io = inchesOver60(heightCm);
+  return positive(sex === 'male' ? 56.2 + 1.41 * io : 53.1 + 1.36 * io);
+}
+
+/** peterson (2016): 2.2·BMI + 3.5·BMI·(height_m − 1.5) at BMI 22; same for both sexes. */
+export function peterson(heightCm: number): number | null {
+  if (!ok(heightCm)) return null;
+  const hM = heightCm / 100;
+  return positive(2.2 * 22 + 3.5 * 22 * (hM - 1.5));
+}
+
+// ---------------------------------------------------------------- bsa (body surface area, m²)
+
+/** mosteller (1987): √(height · weight / 3600). */
+export const mosteller = (heightCm: number, weightKg: number): number =>
+  Math.sqrt((heightCm * weightKg) / 3600);
+
+/** du-bois (1916): 0.007184 · height^0.725 · weight^0.425. */
+export const duBois = (heightCm: number, weightKg: number): number =>
+  0.007184 * heightCm ** 0.725 * weightKg ** 0.425;
+
+/** haycock (1978): 0.024265 · height^0.3964 · weight^0.5378. */
+export const haycock = (heightCm: number, weightKg: number): number =>
+  0.024265 * heightCm ** 0.3964 * weightKg ** 0.5378;

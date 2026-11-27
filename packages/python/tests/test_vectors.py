@@ -18,14 +18,14 @@ class Vectors(unittest.TestCase):
 
     def test_errors(self):
         with self.assertRaisesRegex(W.FormulaInputError, "unknown formula"):
-            W.calculate("mifflin-st-jeor", {})
+            W.calculate("astrand", {})
         with self.assertRaisesRegex(W.FormulaInputError, "age must be"):
             W.calculate("fox", {"age": 17})
         with self.assertRaisesRegex(W.FormulaInputError, "women only"):
             W.calculate("gulati", {"sex": "male", "age": 40})
         with self.assertRaisesRegex(W.FormulaInputError, "abdomen_cm"):
             W.calculate("us-navy", {"sex": "male", "height_cm": 180, "neck_cm": 39, "waist_cm": 88})
-        self.assertEqual(len(W.list_formulas("bmr")), 3)
+        self.assertEqual(len(W.list_formulas("bmr")), 4)
         self.assertEqual(W.REGISTRY_VERSION, W.registry["registry_version"])
 
 

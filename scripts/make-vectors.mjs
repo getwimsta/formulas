@@ -33,8 +33,10 @@ const NEED = {
   'bmi': ['weight_kg', 'height_cm'],
   'max-heart-rate': ['sex', 'age'],
   'waist-to-height': ['waist_cm', 'height_cm'],
+  'ideal-weight': ['sex', 'height_cm'],
+  'bsa': ['sex', 'weight_kg', 'height_cm'],
 };
-const ROUND = { 'body-fat': 1, 'bmi': 1, 'bmr': 0, 'max-heart-rate': 0, 'waist-to-height': 2 };
+const ROUND = { 'body-fat': 1, 'bmi': 1, 'bmr': 0, 'max-heart-rate': 0, 'waist-to-height': 2, 'ideal-weight': 0, 'bsa': 2 };
 const rnd = (v, d) => Math.round(v * 10 ** d) / 10 ** d;
 const pick = (p, ks) => Object.fromEntries(ks.filter((k) => p[k] !== undefined).map((k) => [k, p[k]]));
 

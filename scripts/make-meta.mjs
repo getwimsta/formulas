@@ -27,8 +27,8 @@ const cats = [...new Set(reg.formulas.map((f) => f.category))];
 const description =
   `<p>Open registry of ${reg.formula_count} published equations for body composition and energy expenditure ` +
   `(categories: ${cats.join(', ')}), each with its primary source, coefficients, input list, sex coding, units, ` +
-  `reported error, sample and limitations. Every entry was checked against the primary publication; ` +
-  `the verification status is recorded per entry.</p>` +
+  `reported error, sample and limitations. Each entry records how it was verified: ` +
+  `${reg.formulas.filter((f) => f.verification === 'primary').length} against the primary publication, the rest against secondary sources only.</p>` +
   `<p>Includes test vectors (${vec.vectors.length} input → output cases from the reference implementation, cross-checked ` +
   `against the live WIMSTA calculation API). Human-readable pages: <a href="https://wimsta.com/registry/">https://wimsta.com/registry/</a>.</p>` +
   `<p>Estimates for general information only; not medical advice.</p>`;

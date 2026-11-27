@@ -3,7 +3,7 @@
 Open registry of published body-composition and energy-expenditure equations — body fat, healthy body-fat ranges, BMI, waist-to-height ratio, maximum heart rate and basal metabolic rate — each with its primary source, coefficients, inputs, sex coding, units, reported error and limitations. Human-readable pages: **https://wimsta.com/registry/**.
 
 <!-- meta:start -->
-Registry version **2026.11.27** · 15 formulas · 145 test vectors · packages 1.0.0
+Registry version **2026.11.27.1** · 26 formulas · 254 test vectors · packages 1.0.0
 <!-- meta:end -->
 
 The same data is served live at [`/api/registry.json`](https://wimsta.com/api/registry.json); this repository is a versioned, citable copy plus small packages for JavaScript and Python. Nothing here is edited by hand: `scripts/export.mjs` pulls the registry, `scripts/make-vectors.mjs` rebuilds the test vectors.
@@ -25,9 +25,20 @@ The same data is served live at [`/api/registry.json`](https://wimsta.com/api/re
 | `tanaka` | Tanaka | max-heart-rate | Tanaka, Monahan & Seals 2001 | [10.1016/S0735-1097(00)01054-8](https://doi.org/10.1016/S0735-1097(00)01054-8) | [page](https://wimsta.com/tanaka-formula/) |
 | `gulati` | Gulati | max-heart-rate | Gulati et al. 2010 | [10.1161/CIRCULATIONAHA.110.939249](https://doi.org/10.1161/CIRCULATIONAHA.110.939249) | [page](https://wimsta.com/max-heart-rate-women/) |
 | `fox` | Fox (220 − age) | max-heart-rate | Fox, Naughton & Haskell 1971 | — | [page](https://wimsta.com/220-minus-age/) |
+| `nes` | Nes (HUNT) | max-heart-rate | Nes, Janszky, Wisløff, Støylen & Karlsen 2013 | [10.1111/j.1600-0838.2012.01445.x](https://doi.org/10.1111/j.1600-0838.2012.01445.x) | [page](https://wimsta.com/target-heart-rate-calculator/) |
+| `londeree` | Londeree & Moeschberger | max-heart-rate | Londeree & Moeschberger 1982 | [10.1080/02701367.1982.10605252](https://doi.org/10.1080/02701367.1982.10605252) | [page](https://wimsta.com/target-heart-rate-calculator/) |
+| `inbar` | Inbar | max-heart-rate | Inbar, Oren, Scheinowitz, Rotstein, Dlin & Casaburi 1994 | [10.1249/00005768-199405000-00003](https://doi.org/10.1249/00005768-199405000-00003) | [page](https://wimsta.com/target-heart-rate-calculator/) |
+| `mifflin-st-jeor` | Mifflin–St Jeor | bmr | Mifflin, St Jeor, Hill, Scott, Daugherty & Koh 1990 | [10.1093/ajcn/51.2.241](https://doi.org/10.1093/ajcn/51.2.241) | [page](https://wimsta.com/formulas/mifflin-st-jeor/) |
 | `harris-benedict-1919` | Harris–Benedict | bmr | Harris & Benedict 1919 | — | [page](https://wimsta.com/harris-benedict-calculator/) |
 | `harris-benedict-1984` | Harris–Benedict revised | bmr | Roza & Shizgal 1984 | [10.1093/ajcn/40.1.168](https://doi.org/10.1093/ajcn/40.1.168) | [page](https://wimsta.com/harris-benedict-calculator/) |
 | `katch-mcardle` | Katch–McArdle (Cunningham 1991) | bmr | Cunningham (popularised by Katch & McArdle) 1991 | [10.1093/ajcn/54.6.963](https://doi.org/10.1093/ajcn/54.6.963) | [page](https://wimsta.com/katch-mcardle-calculator/) |
+| `devine` | Devine | ideal-weight | Devine (in McCarron & Devine) 1974 | [10.1177/106002807400801104](https://doi.org/10.1177/106002807400801104) | [page](https://wimsta.com/ideal-weight-calculator/) |
+| `robinson` | Robinson | ideal-weight | Robinson, Lupkiewicz, Palenik, Lopez & Ariet 1983 | [10.1093/ajhp/40.6.1016](https://doi.org/10.1093/ajhp/40.6.1016) | [page](https://wimsta.com/ideal-weight-calculator/) |
+| `miller-ideal-weight` | Miller (ideal body weight) | ideal-weight | Miller, Carlson, Lloyd & Day 1983 | [10.1093/ajhp/40.10.1622a](https://doi.org/10.1093/ajhp/40.10.1622a) | [page](https://wimsta.com/ideal-weight-calculator/) |
+| `peterson` | Peterson (BMI-universal) | ideal-weight | Peterson, Thomas, Blackburn & Heymsfield 2016 | [10.3945/ajcn.115.121178](https://doi.org/10.3945/ajcn.115.121178) | [page](https://wimsta.com/ideal-weight-calculator/) |
+| `mosteller` | Mosteller | bsa | Mosteller 1987 | [10.1056/NEJM198710223171717](https://doi.org/10.1056/NEJM198710223171717) | [page](https://wimsta.com/bsa-calculator/) |
+| `du-bois` | Du Bois | bsa | Du Bois & Du Bois 1916 | [10.1001/archinte.1916.00080130010002](https://doi.org/10.1001/archinte.1916.00080130010002) | [page](https://wimsta.com/bsa-calculator/) |
+| `haycock` | Haycock | bsa | Haycock, Schwartz & Wisotsky 1978 | [10.1016/S0022-3476(78)80601-5](https://doi.org/10.1016/S0022-3476(78)80601-5) | [page](https://wimsta.com/bsa-calculator/) |
 <!-- table:end -->
 
 Field-by-field description: [`data/DATA_DICTIONARY.md`](data/DATA_DICTIONARY.md).
@@ -62,7 +73,7 @@ Inputs use the same names, metric units and bounds as the WIMSTA API (`sex`, `ag
 
 ## Need a range across several formulas? Use the API
 
-The packages compute **one formula at a time** and return the unrounded value. Combining formulas into an honest range, deciding which formulas apply to which inputs, and categories are done by the calculation API: [`https://wimsta.com/api/calc`](https://wimsta.com/api/calc) (OpenAPI: [`/api/openapi.json`](https://wimsta.com/api/openapi.json)). The API rounds as the site displays (body fat and BMI to 0.1, BMR and heart rate to whole numbers).
+The packages compute **one formula at a time** and return the unrounded value. Combining formulas into an honest range, deciding which formulas apply to which inputs, and categories are done by the calculation API: [`https://wimsta.com/api/calc`](https://wimsta.com/api/calc) (OpenAPI: [`/api/openapi.json`](https://wimsta.com/api/openapi.json)). The API rounds as the site displays (body fat and BMI to 0.1, BMR, heart rate and ideal weight to whole numbers, body surface area to 0.01 m²).
 
 ## Test vectors
 
@@ -71,14 +82,14 @@ The packages compute **one formula at a time** and return the unrounded value. C
 ## How to cite
 
 <!-- cite:start -->
-WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27) [Data set]. https://wimsta.com/registry/
+WIMSTA (2026). *WIMSTA Formula Registry* (version 2026.11.27.1) [Data set]. https://wimsta.com/registry/
 
 ```bibtex
 @dataset{wimsta_formula_registry,
   author    = {{WIMSTA}},
   title     = {WIMSTA Formula Registry: body-composition and energy-expenditure equations with primary sources},
   year      = {2026},
-  version   = {2026.11.27},
+  version   = {2026.11.27.1},
   url       = {https://wimsta.com/registry/},
   publisher = {Zenodo}
 }

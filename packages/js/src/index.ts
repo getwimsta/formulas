@@ -80,6 +80,17 @@ const NEEDS: Record<string, (sex?: Sex) => (keyof Inputs)[]> = {
   'harris-benedict-1919': () => ['sex', 'age', 'height_cm', 'weight_kg'],
   'harris-benedict-1984': () => ['sex', 'age', 'height_cm', 'weight_kg'],
   'katch-mcardle': () => ['weight_kg', 'body_fat_pct'],
+  'mifflin-st-jeor': () => ['sex', 'age', 'height_cm', 'weight_kg'],
+  'nes': () => ['age'],
+  'londeree': () => ['age'],
+  'inbar': () => ['age'],
+  'devine': () => ['sex', 'height_cm'],
+  'robinson': () => ['sex', 'height_cm'],
+  'miller-ideal-weight': () => ['sex', 'height_cm'],
+  'peterson': () => ['height_cm'],
+  'mosteller': () => ['height_cm', 'weight_kg'],
+  'du-bois': () => ['height_cm', 'weight_kg'],
+  'haycock': () => ['height_cm', 'weight_kg'],
 };
 
 const UNIT: Record<string, string> = {
@@ -89,6 +100,8 @@ const UNIT: Record<string, string> = {
   'waist-to-height': 'ratio',
   'max-heart-rate': 'bpm',
   'bmr': 'kcal/day',
+  'ideal-weight': 'kg',
+  'bsa': 'm²',
 };
 
 function check(id: string, inputs: Inputs): void {
@@ -151,6 +164,17 @@ export function calculate(id: string, inputs: Inputs): Result {
     case 'harris-benedict-1919': value = F.harrisBenedict1919(bmr); break;
     case 'harris-benedict-1984': value = F.harrisBenedict1984(bmr); break;
     case 'katch-mcardle': value = F.katchMcArdle(bmr); break;
+    case 'mifflin-st-jeor': value = F.mifflinStJeor(bmr); break;
+    case 'nes': value = F.nes(inputs.age!); break;
+    case 'londeree': value = F.londeree(inputs.age!); break;
+    case 'inbar': value = F.inbar(inputs.age!); break;
+    case 'devine': value = F.devine(inputs.height_cm!, sex); break;
+    case 'robinson': value = F.robinson(inputs.height_cm!, sex); break;
+    case 'miller-ideal-weight': value = F.millerIdealWeight(inputs.height_cm!, sex); break;
+    case 'peterson': value = F.peterson(inputs.height_cm!); break;
+    case 'mosteller': value = F.mosteller(inputs.height_cm!, inputs.weight_kg!); break;
+    case 'du-bois': value = F.duBois(inputs.height_cm!, inputs.weight_kg!); break;
+    case 'haycock': value = F.haycock(inputs.height_cm!, inputs.weight_kg!); break;
     default: throw new FormulaInputError(`unknown formula id "${id}"`);
   }
   if (value === null) throw new FormulaInputError(`${id}: the equation is undefined for these inputs`);

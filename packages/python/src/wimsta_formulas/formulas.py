@@ -132,6 +132,25 @@ def fox(age: float) -> float:
     return 220 - age
 
 
+def nes(age: float) -> float:
+    return 211 - 0.64 * age
+
+
+def londeree(age: float) -> float:
+    return 206.3 - 0.711 * age
+
+
+def inbar(age: float) -> float:
+    return 205.8 - 0.685 * age
+
+
+def mifflin_st_jeor(m: dict) -> Optional[float]:
+    w, h, a = m.get("weight"), m.get("height"), m.get("age")
+    if not (_ok(w) and _ok(h) and _ok(a)):
+        return None
+    return 10 * w + 6.25 * h - 5 * a + (5 if m["sex"] == "male" else -161)
+
+
 def harris_benedict_1919(m: dict) -> Optional[float]:
     w, h, a = m.get("weight"), m.get("height"), m.get("age")
     if not (_ok(w) and _ok(h) and _ok(a)):
@@ -156,3 +175,55 @@ def katch_mcardle(m: dict) -> Optional[float]:
         return None
     lean = w * (1 - bf / 100)
     return 370 + 21.6 * lean
+
+
+# ---------------------------------------------------------------- ideal-weight (kg)
+
+def _inches_over_60(height_cm: float) -> float:
+    return (height_cm - 152.4) / 2.54
+
+
+def _positive(v: float) -> Optional[float]:
+    return v if math.isfinite(v) and v > 0 else None
+
+
+def devine(height_cm: float, sex: str) -> Optional[float]:
+    if not _ok(height_cm):
+        return None
+    io = _inches_over_60(height_cm)
+    return _positive(50.0 + 2.3 * io if sex == "male" else 45.5 + 2.3 * io)
+
+
+def robinson(height_cm: float, sex: str) -> Optional[float]:
+    if not _ok(height_cm):
+        return None
+    io = _inches_over_60(height_cm)
+    return _positive(51.65 + 1.85 * io if sex == "male" else 48.67 + 1.65 * io)
+
+
+def miller_ideal_weight(height_cm: float, sex: str) -> Optional[float]:
+    if not _ok(height_cm):
+        return None
+    io = _inches_over_60(height_cm)
+    return _positive(56.2 + 1.41 * io if sex == "male" else 53.1 + 1.36 * io)
+
+
+def peterson(height_cm: float) -> Optional[float]:
+    if not _ok(height_cm):
+        return None
+    h_m = height_cm / 100
+    return _positive(2.2 * 22 + 3.5 * 22 * (h_m - 1.5))
+
+
+# ---------------------------------------------------------------- body surface area (m²)
+
+def mosteller(height_cm: float, weight_kg: float) -> float:
+    return math.sqrt((height_cm * weight_kg) / 3600)
+
+
+def du_bois(height_cm: float, weight_kg: float) -> float:
+    return 0.007184 * height_cm ** 0.725 * weight_kg ** 0.425
+
+
+def haycock(height_cm: float, weight_kg: float) -> float:
+    return 0.024265 * height_cm ** 0.3964 * weight_kg ** 0.5378

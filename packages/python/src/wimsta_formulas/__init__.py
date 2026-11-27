@@ -53,11 +53,22 @@ def _needs(id: str, sex: Optional[str]) -> List[str]:
         "harris-benedict-1919": ["sex", "age", "height_cm", "weight_kg"],
         "harris-benedict-1984": ["sex", "age", "height_cm", "weight_kg"],
         "katch-mcardle": ["weight_kg", "body_fat_pct"],
+        "mifflin-st-jeor": ["sex", "age", "height_cm", "weight_kg"],
+        "nes": ["age"],
+        "londeree": ["age"],
+        "inbar": ["age"],
+        "devine": ["sex", "height_cm"],
+        "robinson": ["sex", "height_cm"],
+        "miller-ideal-weight": ["sex", "height_cm"],
+        "peterson": ["height_cm"],
+        "mosteller": ["height_cm", "weight_kg"],
+        "du-bois": ["height_cm", "weight_kg"],
+        "haycock": ["height_cm", "weight_kg"],
     }[id]
 
 
 _UNIT = {"body-fat": "%", "body-fat-ranges": "%", "bmi": "kg/m²", "waist-to-height": "ratio",
-         "max-heart-rate": "bpm", "bmr": "kcal/day"}
+         "max-heart-rate": "bpm", "bmr": "kcal/day", "ideal-weight": "kg", "bsa": "m²"}
 
 
 def calculate(id: str, inputs: Dict[str, Any]) -> Dict[str, Any]:
@@ -99,6 +110,17 @@ def calculate(id: str, inputs: Dict[str, Any]) -> Dict[str, Any]:
         "harris-benedict-1919": lambda: F.harris_benedict_1919(m),
         "harris-benedict-1984": lambda: F.harris_benedict_1984(m),
         "katch-mcardle": lambda: F.katch_mcardle(m),
+        "mifflin-st-jeor": lambda: F.mifflin_st_jeor(m),
+        "nes": lambda: F.nes(m["age"]),
+        "londeree": lambda: F.londeree(m["age"]),
+        "inbar": lambda: F.inbar(m["age"]),
+        "devine": lambda: F.devine(m["height"], sex),
+        "robinson": lambda: F.robinson(m["height"], sex),
+        "miller-ideal-weight": lambda: F.miller_ideal_weight(m["height"], sex),
+        "peterson": lambda: F.peterson(m["height"]),
+        "mosteller": lambda: F.mosteller(m["height"], m["weight"]),
+        "du-bois": lambda: F.du_bois(m["height"], m["weight"]),
+        "haycock": lambda: F.haycock(m["height"], m["weight"]),
     }[id]
     value = fn()
     if value is None:

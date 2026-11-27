@@ -7,7 +7,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "description": "<p>Open registry of 15 published equations for body composition and energy expenditure (categories: body-fat, body-fat-ranges, bmi, waist-to-height, max-heart-rate, bmr), each with its primary source, coefficients, input list, sex coding, units, reported error, sample and limitations. Every entry was checked against the primary publication; the verification status is recorded per entry.</p><p>Includes test vectors (145 input → output cases from the reference implementation, cross-checked against the live WIMSTA calculation API). Human-readable pages: <a href=\"https://wimsta.com/registry/\">https://wimsta.com/registry/</a>.</p><p>Estimates for general information only; not medical advice.</p>",
+  "description": "<p>Open registry of 26 published equations for body composition and energy expenditure (categories: body-fat, body-fat-ranges, bmi, waist-to-height, max-heart-rate, bmr, ideal-weight, bsa), each with its primary source, coefficients, input list, sex coding, units, reported error, sample and limitations. Each entry records how it was verified: 13 against the primary publication, the rest against secondary sources only.</p><p>Includes test vectors (254 input → output cases from the reference implementation, cross-checked against the live WIMSTA calculation API). Human-readable pages: <a href=\"https://wimsta.com/registry/\">https://wimsta.com/registry/</a>.</p><p>Estimates for general information only; not medical advice.</p>",
   "keywords": [
     "body composition",
     "body fat",
@@ -18,7 +18,7 @@
     "anthropometry",
     "equations"
   ],
-  "version": "2026.11.27",
+  "version": "2026.11.27.1",
   "related_identifiers": [
     {
       "relation": "isDocumentedBy",
@@ -67,12 +67,67 @@
     },
     {
       "relation": "references",
+      "identifier": "10.1111/j.1600-0838.2012.01445.x",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1080/02701367.1982.10605252",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1249/00005768-199405000-00003",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajcn/51.2.241",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
       "identifier": "10.1093/ajcn/40.1.168",
       "scheme": "doi"
     },
     {
       "relation": "references",
       "identifier": "10.1093/ajcn/54.6.963",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1177/106002807400801104",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajhp/40.6.1016",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1093/ajhp/40.10.1622a",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.3945/ajcn.115.121178",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1056/NEJM198710223171717",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1001/archinte.1916.00080130010002",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1016/S0022-3476(78)80601-5",
       "scheme": "doi"
     }
   ]
