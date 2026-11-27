@@ -3,7 +3,7 @@
 Open registry of published body-composition and energy-expenditure equations — body fat, healthy body-fat ranges, BMI, waist-to-height ratio, maximum heart rate, basal metabolic rate, ideal body weight and body surface area — each with its primary source, coefficients, inputs, sex coding, units, reported error and limitations. Human-readable pages: **https://wimsta.com/registry/**.
 
 <!-- meta:start -->
-Registry version **2026.11.27.1** · 26 formulas · 254 test vectors · packages 1.0.0
+Registry version **2026.11.27.1** · 26 formulas · 254 test vectors · packages 1.0.1
 <!-- meta:end -->
 
 The same data is served live at [`/api/registry.json`](https://wimsta.com/api/registry.json); this repository is a versioned, citable copy plus small packages for JavaScript and Python. Nothing here is edited by hand: `scripts/export.mjs` pulls the registry, `scripts/make-vectors.mjs` rebuilds the test vectors.

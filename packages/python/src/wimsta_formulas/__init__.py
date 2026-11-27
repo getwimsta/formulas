@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Optional
 from . import formulas as F
 
 __all__ = ["registry", "REGISTRY_VERSION", "vectors", "get_formula", "list_formulas", "calculate", "FormulaInputError"]
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 _data = files(__package__) / "data"
 registry: Dict[str, Any] = json.loads((_data / "registry.json").read_text(encoding="utf-8"))

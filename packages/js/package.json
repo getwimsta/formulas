@@ -1,6 +1,6 @@
 {
   "name": "wimsta-formulas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WIMSTA Formula Registry: body-fat, BMI, waist-to-height, max heart rate and BMR equations with primary sources. Single formulas; ranges via the WIMSTA API.",
   "license": "Apache-2.0",
   "author": "WIMSTA <hello@wimsta.com> (https://wimsta.com)",
